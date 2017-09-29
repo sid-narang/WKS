@@ -40,7 +40,7 @@ scenarios:
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
       label: http://www.centurylink.com/home/
       method: POST
-      url: http://blazedemo.comreserve.php
+      url: http://blazedemo.com/reserve.php
     - body:
         airline: United Airlines
         flight: '234'
@@ -60,7 +60,7 @@ scenarios:
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
       label: http://www.centurylink.com/home/help.html
       method: POST
-      url: http://blazedemo.compurchase.php
+      url: http://blazedemo.com/purchase.php
     - body:
         _token: ''
         address: ''
@@ -86,7 +86,7 @@ scenarios:
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
       label: http://www.centurylink.com/home/help/contact.html
       method: POST
-      url: http://blazedemo.comconfirmation.php
+      url: http://blazedemo.com/confirmation.php
     store-cache: true
     store-cookie: true
     use-dns-cache-mgr: false
