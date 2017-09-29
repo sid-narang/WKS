@@ -1,0 +1,28 @@
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner main
+INFO: Starting: [/Users/narsi01/Desktop/JWC_SN/sel/2017-08-10_13-33-06.461233/runner.properties]
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner processJAR
+INFO: Processing JAR: /Users/narsi01/Desktop/JWC_SN/sel/2017-08-10_13-33-06.461233/classes/compiled.jar
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner processJAR
+INFO: TestCase.class.isAssignableFrom(com.company.StasTaurusDemo) = false
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner processJAR
+INFO: has_annotations(com.company.StasTaurusDemo) = true
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner processJAR
+INFO: class added to tests: com.company.StasTaurusDemo
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner main
+INFO: Running with classes: [class com.company.StasTaurusDemo]
+Aug 10, 2017 1:33:10 PM taurusjunit.TaurusReporter <init>
+INFO: LDJSON file: /Users/narsi01/Desktop/JWC_SN/sel/2017-08-10_13-33-06.461233/selenium_tests_report.ldjson
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomListener testRunStarted
+INFO: Run Started: null
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomListener testStarted
+INFO: started startDemo(com.company.StasTaurusDemo)
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomListener testFailure
+SEVERE: failed startDemo(com.company.StasTaurusDemo): The driver executable is a directory: /Users/narsi01/Documents/WebdriverPath
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomListener testFinished
+INFO: finished startDemo(com.company.StasTaurusDemo)
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomListener testRunFinished
+INFO: Run Finished, successful=false, run count=1
+Aug 10, 2017 1:33:10 PM taurusjunit.CustomRunner main
+INFO: Elapsed: 129, limit: 0.0
+Aug 10, 2017 1:33:10 PM taurusjunit.TaurusReporter close
+INFO: Closing LDJSON reporter stream

@@ -1,0 +1,14 @@
+---
+execution:
+- concurrency: 50
+  hold-for: 5m
+  ramp-up: 30s
+  scenario: sample
+
+scenarios:
+  sample:
+    requests:
+      - url: http://blazedemo.com/  # url to hit
+        label: homepage  # sampler label
+      - url: http://blazedemo.com/reserve.php
+        label: reserve

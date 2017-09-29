@@ -1,0 +1,52 @@
+---
+execution:
+- concurrency: 5
+  hold-for: 120s
+  iterations: 100
+  ramp-up: 60s
+  scenario: Thread Group
+scenarios:
+  Thread Group:
+    requests:
+    - follow-redirects: true
+      label: http://www.centurylink.com/index_a.html
+      method: GET
+      url: http://www.centurylink.comindex_a.html
+    - body:
+        _: '1506712309663'
+      follow-redirects: true
+      label: http://www.centurylink.com/assets/includes/common/homepage/home_biz.html?_=1506712309663
+      method: GET
+      url: http://www.centurylink.comassets/includes/common/homepage/home_biz.html
+    - follow-redirects: true
+      label: http://www.centurylink.com/home/
+      method: GET
+      url: http://www.centurylink.comhome/
+    - follow-redirects: true
+      label: http://www.centurylink.com/home/help.html
+      method: GET
+      url: http://www.centurylink.comhome/help.html
+    - follow-redirects: true
+      label: http://www.centurylink.com/libs/granite/csrf/token.json
+      method: GET
+      url: http://www.centurylink.comlibs/granite/csrf/token.json
+    - follow-redirects: true
+      label: http://www.centurylink.com/home/help.html
+      method: GET
+      url: http://www.centurylink.comhome/help.html
+    - follow-redirects: true
+      label: http://www.centurylink.com/help/contact/
+      method: GET
+      url: http://www.centurylink.comhelp/contact/
+    - follow-redirects: true
+      label: http://www.centurylink.com/libs/granite/csrf/token.json
+      method: GET
+      url: http://www.centurylink.comlibs/granite/csrf/token.json
+    - follow-redirects: true
+      label: http://www.centurylink.com/home/help/contact.html
+      method: GET
+      url: http://www.centurylink.comhome/help/contact.html
+    store-cache: true
+    store-cookie: true
+    use-dns-cache-mgr: false
+

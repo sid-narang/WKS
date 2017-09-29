@@ -1,0 +1,15 @@
+---
+execution:
+- iterations: 100
+  concurrency: 10
+  scenario: with_script
+
+scenarios:
+  with_script:
+    script: CTL_SLA.jmx
+    
+# //services:
+# //- module: fail-criteria
+# //  criteria:
+# //  - "avg-rt>150ms for 10s, continue as failed"
+# //  - "fail>50% for 10s, stop as failed"
