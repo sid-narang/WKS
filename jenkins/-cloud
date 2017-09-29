@@ -1,0 +1,38 @@
+16:21:44 INFO: Taurus CLI Tool v1.7.5
+16:21:44 INFO: Starting with configs: ['/var/folders/rz/llsy0wqx4zn6qw066kpv7l8r0000gn/T/stdin_o7qJ2Z.config']
+16:21:44 INFO: Configuring...
+16:21:45 INFO: Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2017-02-16_16-21-45.225040
+16:21:45 INFO: Preparing...
+16:21:45 WARNING: Selenium supports concurrency in cloud provisioning mode only
+For details look at http://gettaurus.org/docs/Cloud.md
+16:21:45 WARNING: Could not find location at path: /Users/sidnarang/.bzt/selenium-taurus/selenium-server.jar
+16:21:45 WARNING: Could not find location at path: /Users/sidnarang/.bzt/selenium-taurus/tools/junit/junit.jar
+16:21:45 WARNING: Could not find location at path: /Users/sidnarang/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar
+16:21:45 WARNING: Could not find location at path: /Users/sidnarang/.bzt/selenium-taurus/tools/junit/json.jar
+16:21:45 INFO: Installing Selenium server...
+16:21:48 INFO: Installing JUnit...
+16:21:48 INFO: Will install JUnit into /Users/sidnarang/.bzt/selenium-taurus/tools/junit
+16:21:48 INFO: Downloading: http://search.maven.org/remotecontent?filepath=junit/junit/4.12/junit-4.12.jar
+16:21:49 INFO: Installed JUnit successfully
+16:21:49 INFO: Installing HamcrestJar...
+16:21:49 INFO: Installing JsonJar...
+16:21:50 INFO: Compiling .java files completed
+16:21:51 INFO: Making .jar file completed
+16:21:51 INFO: Starting...
+16:21:51 INFO: Waiting for results...
+16:22:00 WARNING: Please wait for graceful shutdown...
+16:22:00 INFO: Shutting down...
+16:22:01 WARNING: Keyboard interrupt
+16:22:01 INFO: Post-processing...
+16:22:01 INFO: Test duration: 0:00:10
+16:22:01 INFO: Samples count: 17227, 100.00% failures
+16:22:01 INFO: Average times: total 0.000, latency 0.000, connect 0.000
+16:22:01 INFO: Percentile 0.0%: 0.000
+16:22:01 INFO: Percentile 50.0%: 0.000
+16:22:01 INFO: Percentile 90.0%: 0.001
+16:22:01 INFO: Percentile 95.0%: 0.001
+16:22:01 INFO: Percentile 99.0%: 0.001
+16:22:01 INFO: Percentile 99.9%: 0.002
+16:22:01 INFO: Percentile 100.0%: 0.067
+16:22:01 INFO: Artifacts dir: /Users/sidnarang/Desktop/JWC_SN/jenkins/2017-02-16_16-21-45.225040
+16:22:01 WARNING: Done performing with code: 1

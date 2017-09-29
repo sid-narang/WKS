@@ -1,0 +1,23 @@
+---
+execution:
+- executor: gatling
+  locations:
+    us-west-1: 1
+  scenario: simple
+scenarios:
+  simple:
+    script: test.jar
+    simulation: com.intuit.tests.SimpleTest
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
+  run-at: local

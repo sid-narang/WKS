@@ -1,0 +1,35 @@
+---
+execution:
+- executor: selenium
+  iterations: 2
+  locations:
+    eu-west-1: 1
+  scenario: req
+modules:
+  blazemeter:
+    token: '********'
+scenarios:
+  req:
+    additional-classpath: []
+    browser: Chrome
+    requests:
+    - https://nytimes.com
+    script: null
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
+  run-at: local
+- module: capturehar
+  run-at: local
+- module: screenshoter
+  run-at: local
+

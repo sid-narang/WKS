@@ -1,0 +1,23 @@
+---
+scenarios:
+  simpliest:
+    default-address: http://blazedemo.com
+    requests:
+    - /
+    - /vacation.html
+
+execution:
+- executor: jmeter
+  concurrency: 10
+  hold-for: 5m
+  scenario: simpliest
+
+- executor: gatling
+  concurrency: 10
+  hold-for: 5m
+  scenario: simpliest
+
+- executor: selenium
+  concurrency: 1
+  hold-for: 5m
+  scenario: simpliest

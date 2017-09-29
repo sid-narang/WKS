@@ -1,0 +1,27 @@
+---
+modules:
+  blazemeter:
+    test: Har Demo
+
+scenarios:
+  req:
+    browser: Chrome
+    requests:
+    - https://blazedemo.com
+
+execution:
+  - scenario: req
+    executor: selenium
+    iterations: 2
+    locations:
+      eu-west-1: 1
+
+services:
+- capturehar
+- screenshoter
+
+modules:
+  selenium:
+    virtual-display:
+      width: 1280
+      height: 800

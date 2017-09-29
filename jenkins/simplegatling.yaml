@@ -1,0 +1,10 @@
+---
+execution:
+- executor: gatling
+  scenario: sample
+
+scenarios:
+  sample:
+    script: BasicSimulation.scala
+    simulation: BasicSimulation
+    keepalive: true

@@ -1,0 +1,25 @@
+---
+execution:
+- executor: selenium
+  scenario: simple
+  hold-for: 10m
+  concurrency: 20
+  ramp-up: 1m
+  iterations: 100
+
+scenarios:
+  simple:
+
+
+modules:
+  selenium:
+    virtual-display:
+      width: 1024
+      height: 768
+    selenium-tools:
+      nose:
+        working-dir: work
+
+modules:
+  cloud:
+    test: Selenium Cloud Test

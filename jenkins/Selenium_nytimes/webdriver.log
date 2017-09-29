@@ -1,0 +1,136 @@
+[0.994][INFO]: COMMAND InitSession {
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      },
+      "javascriptEnabled": true,
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[0.995][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[0.995][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[0.995][INFO]: Launching chrome: /usr/local/bin/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --disable-hang-monitor --disable-infobars --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-logging --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.46vpsE/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12758 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.q0r1Zx data:,
+[1.787][INFO]: resolved localhost to ["127.0.0.1"]
+[1.957][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.25.426924 (649f9b868f6783ec9de71c123212b908bf3b232e)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.q0r1Zx"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[1.959][INFO]: COMMAND SetImplicitWait {
+   "ms": 30000.0,
+   "sessionId": "3ffc632894b8ac12f40ab279024dbde0"
+}
+[1.959][INFO]: RESPONSE SetImplicitWait
+[1.960][INFO]: COMMAND SetWindowSize {
+   "height": 1024,
+   "sessionId": "3ffc632894b8ac12f40ab279024dbde0",
+   "width": 1280,
+   "windowHandle": "current"
+}
+[1.961][INFO]: resolved localhost to ["127.0.0.1"]
+[2.062][INFO]: Waiting for pending navigations...
+[2.128][INFO]: Done waiting for pending navigations. Status: ok
+[2.369][INFO]: RESPONSE SetWindowSize
+[2.371][INFO]: COMMAND SetImplicitWait {
+   "ms": 30000.0,
+   "sessionId": "3ffc632894b8ac12f40ab279024dbde0"
+}
+[2.371][INFO]: RESPONSE SetImplicitWait
+[2.372][INFO]: COMMAND Navigate {
+   "sessionId": "3ffc632894b8ac12f40ab279024dbde0",
+   "url": "https://nytimes.com"
+}
+[2.373][INFO]: Waiting for pending navigations...
+[2.375][INFO]: Done waiting for pending navigations. Status: ok
+[4.304][INFO]: Waiting for pending navigations...
+[38.277][INFO]: Done waiting for pending navigations. Status: ok
+[38.277][INFO]: RESPONSE Navigate
+[38.279][INFO]: COMMAND Quit {
+
+}
+[38.330][INFO]: RESPONSE Quit

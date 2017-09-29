@@ -1,0 +1,81 @@
+---
+execution:
+
+- concurrency: 100
+  executor: jmeter
+  hold-for: 10m
+  locations:
+    eu-west-1: 1
+    us-east-1: 2
+    us-west1-a: 3
+  ramp-up: 2m
+  scenario: login
+
+- concurrency: 100
+  executor: gatling
+  hold-for: 2m
+  locations:
+    us-east-1: 50
+    us-west-1: 50
+  ramp-up: 30s
+  scenario: existing
+  steps: 5
+  
+- concurrency: 50
+  executor: selenium
+  locations:
+    eu-west-1: 1
+    us-east-1: 1
+  locations-weighted: false
+  ramp-up: 10m
+  scenario: req
+scenarios:
+  existing:
+    script: blazedemo.scala
+    simulation: examples.gatling.blazedemo
+  login:
+    data-sources:
+    - reviews.csv
+    modifications:
+      set-prop:
+        CSV Data Set Config>filename: ./reviews.csv
+    requests: []
+    script: Login.jmx
+  req:
+    additional-classpath: []
+    browser: Chrome
+    requests:
+    - http://blazedemo.com
+    - http://blazedemo.com/vacation.html
+    script: null
+    think-time: 2s
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
+  run-at: local
+- criteria:
+    Avgfail: avg-rt>150ms for 1s, continue as failed
+  module: passfail
+  run-at: local
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
+  run-at: local
+

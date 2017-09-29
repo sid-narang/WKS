@@ -1,0 +1,11 @@
+[INFO  2017-02-21T11:42:54,217 net.lightbody.bmp.proxy.Main] (main) Starting BrowserMob Proxy version 2.1.4 
+[INFO  2017-02-21T11:42:54,260 org.eclipse.jetty.util.log] (main) jetty-7.x.y-SNAPSHOT 
+[INFO  2017-02-21T11:42:54,676 org.eclipse.jetty.util.log] (main) started o.e.j.s.ServletContextHandler{/,null} 
+[INFO  2017-02-21T11:42:55,929 org.eclipse.jetty.util.log] (main) Started SelectChannelConnector@0.0.0.0:9090 
+[INFO  2017-02-21T11:42:57,713 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-17) Starting proxy at address: 0.0.0.0/0.0.0.0:8081 
+[INFO  2017-02-21T11:42:57,745 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-17) Proxy listening with TCP transport 
+[INFO  2017-02-21T11:42:57,823 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-17) Proxy started at address: /0:0:0:0:0:0:0:0:8081 
+[INFO  2017-02-21T11:44:18,753 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-15) Shutting down proxy server gracefully 
+[INFO  2017-02-21T11:44:18,754 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-15) Closing all channels (graceful) 
+[INFO  2017-02-21T11:44:18,796 org.littleshoot.proxy.impl.ServerGroup] (qtp1175304638-15) Shutting down server group event loops (graceful) 
+[INFO  2017-02-21T11:44:21,022 org.littleshoot.proxy.impl.DefaultHttpProxyServer] (qtp1175304638-15) Done shutting down proxy server 

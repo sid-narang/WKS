@@ -1,0 +1,31 @@
+---
+modules:
+  blazemeter:
+    test: Taurus1 Demo
+  cloud:
+    token: a968786f085e09e3e404  # API key
+    timeout: 10s  # BlazeMeter API client timeout
+    browser-open: start  # auto-open browser on test start/end/both/none
+    check-interval: 5s  # interval which Taurus uses to query test status from BlazeMeter
+
+scenarios:
+  simple:
+    requests:
+    - label: HomePage
+      url: http://blazedemo.com/
+    - label: VacationPage
+      url: http://blazedemo.com/vacation.html
+
+execution: 
+  scenario: simple 
+  concurrency:
+  cloud: 1000
+    ramp-up: 10s
+    hold-for: 5m
+    locations: 
+      eu-central-1: 1
+      eu-west-1: 1
+      us-east-1: 1
+      us-west-1: 1
+      us-west-2: 1
+

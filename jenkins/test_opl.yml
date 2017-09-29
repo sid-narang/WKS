@@ -1,0 +1,26 @@
+---
+execution:
+  scenario: simples
+  hold-for: 12m
+  concurrency: 100
+  ramp-up: 80s
+  -locations:
+    harbor-555543a256e0941b4bb6edad: 1
+
+modules:
+  cloud:
+    test: Taurus OPL2
+    project: 61465
+
+scenarios:
+  simples:
+    requests:
+    - label: HomePage
+      url: http://blazedemo.com/
+    - label: VacationPage
+      url: http://blazedemo.com/vacation.html
+
+services:
+- module: passfail
+  criteria:
+  - avg-rt of HomePage>7500ms for 10s, continue as failed

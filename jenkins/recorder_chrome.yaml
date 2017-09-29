@@ -1,0 +1,62 @@
+---
+execution:
+  scenario: blazemeter-recording
+  concurrency: 10
+  ramp-up: 1m
+  hold-for: 5m
+scenarios:
+  blazemeter-recording:
+    headers:
+      Upgrade-Insecure-Requests: '1'
+      User-Agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36'
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+      Accept-Language: 'en-US,en;q=0.8'
+    requests:
+      - url: 'http://blazedemo.com/index.php'
+        method: GET
+        label: 'http://blazedemo.com/index.php'
+        headers:
+          Referer: 'http://blazedemo.com/'
+          Accept-Encoding: 'gzip, deflate, sdch'
+      - url: 'http://blazedemo.com/reserve.php'
+        method: POST
+        label: 'http://blazedemo.com/reserve.php'
+        headers:
+          Origin: 'http://blazedemo.com'
+          Content-Type: application/x-www-form-urlencoded
+          Referer: 'http://blazedemo.com/index.php'
+          Accept-Encoding: 'gzip, deflate'
+        body:
+          fromPort: Boston
+          toPort: Buenos Aires
+      - url: 'http://blazedemo.com/purchase.php'
+        method: POST
+        label: 'http://blazedemo.com/purchase.php'
+        headers:
+          Origin: 'http://blazedemo.com'
+          Content-Type: application/x-www-form-urlencoded
+          Referer: 'http://blazedemo.com/reserve.php'
+          Accept-Encoding: 'gzip, deflate'
+        body:
+          airline: Virgin America
+          flight: '43'
+          fromPort: Boston
+          price: '472.56'
+          toPort: Buenos Aires
+      - url: 'http://blazedemo.com/confirmation.php'
+        method: POST
+        label: 'http://blazedemo.com/confirmation.php'
+        headers:
+          Origin: 'http://blazedemo.com'
+          Content-Type: application/x-www-form-urlencoded
+          Referer: 'http://blazedemo.com/purchase.php'
+          Accept-Encoding: 'gzip, deflate'
+        body:
+          address: ''
+          cardType: visa
+          city: ''
+          creditCardNumber: ''
+          inputName: ''
+          nameOnCard: ''
+          state: ''
+          zipCode: ''

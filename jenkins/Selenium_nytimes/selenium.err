@@ -1,0 +1,12 @@
+test_00000_https_nytimes_com (test_requests.TestRequests) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 39.996s
+
+OK
+test_00000_https_nytimes_com (test_requests.TestRequests) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 38.395s
+
+OK

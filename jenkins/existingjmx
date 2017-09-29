@@ -1,0 +1,7 @@
+---
+execution:
+- scenario: simple
+
+scenarios:
+  simple:
+    script: _blazedemo_v3.jmx

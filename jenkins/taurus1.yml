@@ -1,0 +1,37 @@
+---
+execution:
+- concurrency: 100
+  executor: jmeter
+  hold-for: 10m
+  locations:
+    eu-west-1: 1
+    us-east-1: 2
+    us-west1-a: 3
+  ramp-up: 2m
+  scenario: login
+scenarios:
+  login:
+    data-sources:
+    - reviews.csv
+    modifications:
+      set-prop:
+        CSV Data Set Config>filename: ./reviews.csv
+    requests: []
+    script: Login.jmx
+services:
+- local:
+  - metrics:
+    - cpu
+    - mem
+    - bytes-sent
+    - bytes-recv
+    - disk-read
+    - disk-write
+    - disk-space
+    - engine-loop
+  module: monitoring
+  run-at: local
+- criteria:
+    Avgfail: avg-rt>150ms for 1s, continue as failed
+  module: passfail
+  run-at: local

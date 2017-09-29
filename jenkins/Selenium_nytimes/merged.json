@@ -1,0 +1,363 @@
+{
+ "settings": {
+  "check-updates": true, 
+  "check-interval": 1, 
+  "proxy": {}, 
+  "default-executor": "jmeter"
+ }, 
+ "reporting": [
+  {
+   "session-id": "r-t-58ac276e0e820", 
+   "test-id": 5011013, 
+   "forced-last-check": 0, 
+   "module": "blazemeter", 
+   "signature": "1a21363c58df0d5094a32cf338464125", 
+   "user-id": 43247, 
+   "kpi-target": "buffered_aggregates"
+  }
+ ], 
+ "modules": {
+  "ldjson-results": {
+   "class": "bztcustom.ldjsonresults.LDJSONExporter"
+  }, 
+  "ab": {
+   "class": "bzt.modules.ab.ApacheBenchmarkExecutor"
+  }, 
+  "proxy2jmx": {
+   "class": "bzt.modules.proxy2jmx.Proxy2JMX"
+  }, 
+  "final_stats": {
+   "class": "bzt.modules.reporting.FinalStatus"
+  }, 
+  "blazemeter": {
+   "data-address": "https://qa.blazemeter.com", 
+   "bulk-size": 5, 
+   "token": "********", 
+   "timeout": 15, 
+   "address": "https://qa.blazemeter.com", 
+   "browser-open": null, 
+   "class": "bzt.modules.blazemeter.BlazeMeterUploader"
+  }, 
+  "screenshotersub": {
+   "class": "bztcustom.screenshoter.ScreenShoterSubprocessed"
+  }, 
+  "screenshoter": {
+   "class": "bztcustom.screenshoter.ScreenShoter"
+  }, 
+  "cloud": {
+   "use-deprecated-api": true, 
+   "check-interval": "5s", 
+   "class": "bzt.modules.blazemeter.CloudProvisioning", 
+   "default-location": "us-central1-a"
+  }, 
+  "install-checker": {
+   "class": "bzt.modules.services.InstallChecker"
+  }, 
+  "jtl-loader": "bzt.modules.jmeter.JMeterJTLLoaderExecutor", 
+  "monitoring": {
+   "class": "bzt.modules.monitoring.Monitoring"
+  }, 
+  "selenium": {
+   "selenium-tools": {
+    "junit": {
+     "hamcrest-core": "~/.bzt/selenium-taurus/tools/junit/hamcrest-core.jar", 
+     "json-jar": "~/.bzt/selenium-taurus/tools/junit/json.jar", 
+     "jar-name": "compiled.jar", 
+     "working-dir": "classes", 
+     "path": "~/.bzt/selenium-taurus/tools/junit/junit.jar", 
+     "selenium-server": "~/.bzt/selenium-taurus/selenium-server.jar"
+    }, 
+    "testng": {
+     "hamcrest-core": "~/.bzt/selenium-taurus/tools/testng/hamcrest-core.jar", 
+     "json-jar": "~/.bzt/selenium-taurus/tools/testng/json.jar", 
+     "jar-name": "compiled.jar", 
+     "working-dir": "classes", 
+     "path": "~/.bzt/selenium-taurus/tools/testng/testng.jar", 
+     "selenium-server": "~/.bzt/selenium-taurus/selenium-server.jar"
+    }, 
+    "nose": {
+     "working-dir": "classes"
+    }, 
+    "rspec": {
+     "interpreter": "ruby"
+    }, 
+    "mocha": {
+     "tools-dir": "~/.bzt/selenium-taurus/mocha"
+    }
+   }, 
+   "class": "bztcustom.selenium_enhanced.ConcurrentSeleniumExecutor"
+  }, 
+  "console": {
+   "disable": true, 
+   "class": "bzt.modules.console.ConsoleStatusReporter"
+  }, 
+  "tsung": {
+   "class": "bzt.modules.tsung.TsungExecutor"
+  }, 
+  "passfail": {
+   "class": "bzt.modules.passfail.PassFailStatus"
+  }, 
+  "capturehar": {
+   "path": "~/.bzt/browsermob-proxy", 
+   "class": "bztcustom.capturehar.CaptureHAR"
+  }, 
+  "local": {
+   "class": "bzt.modules.provisioning.Local"
+  }, 
+  "consolidator": {
+   "ignore-labels": [
+    "ignore"
+   ], 
+   "percentiles": [
+    0, 
+    50, 
+    90, 
+    95, 
+    99, 
+    99.9, 
+    100
+   ], 
+   "class": "bzt.modules.aggregator.ConsolidatingAggregator"
+  }, 
+  "shepherd": {
+   "worker-timeout": "5", 
+   "master-id": 15017255, 
+   "exclusive-mode": false, 
+   "default-location": "us-central1-a", 
+   "token": "********", 
+   "api-timeout": 15, 
+   "address": "https://qa.blazemeter.com", 
+   "retries-limit": 60, 
+   "request-logging-limit": 256, 
+   "class": "bztremote.client.Shepherd", 
+   "retry-interval": 15
+  }, 
+  "chrome-profiler": {
+   "class": "bzt.modules.chrome.ChromeProfiler", 
+   "processors": {
+    "trace": {
+     "extractors": [
+      "bzt.modules.chrome.TabNameExtractor", 
+      "bzt.modules.chrome.MemoryMetricsExtractor", 
+      "bztcustom.chrome_prof_tools.DOMMetricsExtractor", 
+      "bztcustom.chrome_prof_tools.JavaScriptMetricsExtractor", 
+      "bztcustom.chrome_prof_tools.LoadTimeMetricsExtractor", 
+      "bztcustom.chrome_prof_tools.NetworkMetricsExtractor"
+     ], 
+     "class": "bzt.modules.chrome.TraceProcessor"
+    }, 
+    "cpuprofile": {
+     "class": "bztcustom.chrome_prof_tools.CPUProfileProcessor", 
+     "file": "js.cpuprofile"
+    }
+   }
+  }, 
+  "shellexec": {
+   "class": "bzt.modules.shellexec.ShellExecutor", 
+   "env": {
+    "TAURUS_INDEX_EXECUTION": 1, 
+    "TAURUS_INDEX_LOCATION": 1, 
+    "TAURUS_INDEX_ALL": 1
+   }, 
+   "default-cwd": "artifacts-dir"
+  }, 
+  "siege": {
+   "class": "bzt.modules.siege.SiegeExecutor"
+  }, 
+  "grinder": {
+   "path": "~/.bzt/grinder-taurus/lib/grinder.jar", 
+   "class": "bzt.modules.grinder.GrinderExecutor", 
+   "properties": {
+    "grinder.useConsole": false
+   }
+  }, 
+  "functional-consolidator": {
+   "class": "bzt.modules.functional.FunctionalAggregator"
+  }, 
+  "jmeter": {
+   "path": "~/.bzt/jmeter-taurus/", 
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true", 
+    "jmeter.save.saveservice.connect_time": "true", 
+    "TAURUS_INDEX_EXECUTION": 1, 
+    "summariser.name": "", 
+    "jmeterengine.force.system.exit": "true", 
+    "mode": "Stripped", 
+    "TAURUS_INDEX_LOCATION": 1, 
+    "TAURUS_INDEX_ALL": 1
+   }, 
+   "class": "bzt.modules.jmeter.JMeterExecutor", 
+   "plugins": [
+    "jpgc-casutg", 
+    "jpgc-dummy", 
+    "jpgc-ffw", 
+    "jpgc-fifo", 
+    "jpgc-functions", 
+    "jpgc-json", 
+    "jpgc-perfmon", 
+    "jpgc-prmctl", 
+    "jpgc-tst"
+   ]
+  }, 
+  "remote": {
+   "retries-limit": 10, 
+   "class": "bztremote.client.Remote"
+  }, 
+  "pbench": {
+   "class": "bzt.modules.pbench.PBenchExecutor"
+  }, 
+  "locust": {
+   "class": "bzt.modules.locustio.LocustIOExecutor"
+  }, 
+  "chrome-metric-reporter": {
+   "class": "bzt.modules.chrome.MetricReporter"
+  }, 
+  "gatling": {
+   "class": "bzt.modules.gatling.GatlingExecutor", 
+   "properties": {
+    "gatling.data.file.bufferSize": 256
+   }
+  }, 
+  "s3downloader": {
+   "class": "bztcustom.s3downloader.S3Downloader"
+  }, 
+  "unpacker": {
+   "class": "bzt.modules.services.Unpacker"
+  }, 
+  "junit-xml": {
+   "class": "bzt.modules.reporting.JUnitXMLReporter"
+  }
+ }, 
+ "scenarios": {
+  "req": {
+   "additional-classpath": [], 
+   "requests": [
+    "https://nytimes.com"
+   ], 
+   "script": null, 
+   "browser": "Chrome"
+  }
+ }, 
+ "version": "1.7.5", 
+ "cli-aliases": {
+  "gui": {
+   "modules": {
+    "jmeter": {
+     "gui": true
+    }
+   }
+  }, 
+  "locations": {
+   "modules": {
+    "cloud": {
+     "dump-locations": true
+    }
+   }, 
+   "provisioning": "cloud"
+  }, 
+  "sequential": {
+   "modules": {
+    "local": {
+     "sequential": true
+    }
+   }
+  }, 
+  "func": {
+   "settings": {
+    "aggregator": "functional-consolidator"
+   }
+  }, 
+  "report": {
+   "reporting": [
+    "blazemeter"
+   ]
+  }, 
+  "install-tools": {
+   "services": [
+    "install-checker"
+   ]
+  }, 
+  "detach": {
+   "modules": {
+    "cloud": {
+     "detach": true
+    }
+   }
+  }, 
+  "local": {
+   "provisioning": "local"
+  }, 
+  "cloud": {
+   "provisioning": "cloud"
+  }
+ }, 
+ "install-id": "blazemeter-cloud-eu-west-1", 
+ "services": [
+  {
+   "aws-params": {
+    "data-path": "users/43247/tests/5011013/masters/15017255/data", 
+    "region": "us-east-1", 
+    "bucket-name": "blazemeter_qa", 
+    "secret": "********", 
+    "token": "********", 
+    "key-id": "ASIAIR6RE3VIMKP62NAQ"
+   }, 
+   "module": "s3downloader"
+  }, 
+  {
+   "run-at": "local", 
+   "local": [
+    {
+     "metrics": [
+      "cpu", 
+      "mem", 
+      "bytes-sent", 
+      "bytes-recv", 
+      "disk-read", 
+      "disk-write", 
+      "disk-space", 
+      "engine-loop"
+     ]
+    }
+   ], 
+   "module": "monitoring"
+  }, 
+  {
+   "run-at": "local", 
+   "local": [
+    {
+     "metrics": [
+      "cpu", 
+      "mem", 
+      "bytes-sent", 
+      "bytes-recv", 
+      "disk-read", 
+      "disk-write", 
+      "disk-space", 
+      "engine-loop"
+     ]
+    }
+   ], 
+   "module": "monitoring"
+  }, 
+  {
+   "run-at": "local", 
+   "module": "capturehar"
+  }, 
+  {
+   "run-at": "local", 
+   "module": "screenshoter"
+  }
+ ], 
+ "execution": [
+  {
+   "locations-weighted": true, 
+   "throughput": {
+    "shepherd": null
+   }, 
+   "scenario": "req", 
+   "iterations": 2, 
+   "executor": "selenium"
+  }
+ ]
+}

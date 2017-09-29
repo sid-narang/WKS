@@ -1,0 +1,16 @@
+---
+execution:
+- executor: grinder
+  concurrency: 3
+  ramp-up: 10s
+  iterations: 20
+  scenario: script_sample
+  
+scenarios:
+  script_sample:
+    script: tests/grinder/helloworld.py
+    properties-file: tests/grinder/grinder.properties
+    properties:
+      grinder.useConsole: false
+
+      

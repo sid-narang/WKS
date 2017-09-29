@@ -1,0 +1,10 @@
+---
+execution:
+- executor: gatling
+  scenario: sample
+
+scenarios:
+  sample:
+    script: tests/gatling/BasicSimulation.scala
+    simulation: tests.gatling.BasicSimulation
+    keepalive: true

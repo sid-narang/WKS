@@ -1,0 +1,13 @@
+---
+modules:
+  blazemeter:
+    test: SE Demo
+
+execution:
+- concurrency: 10
+  executor: selenium
+  hold-for: 10m
+  ramp-up: 3m
+  scenario: Blazedemo.java
+
+scenarios: Blazedemo.java

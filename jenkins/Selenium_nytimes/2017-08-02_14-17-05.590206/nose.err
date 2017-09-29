@@ -1,0 +1,49 @@
+ERROR
+
+======================================================================
+ERROR: test suite for <class 'test_requests.TestRequests'>
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/test_requests.py", line 17, in setUpClass
+    cls.driver = webdriver.Chrome(service_log_path='/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/webdriver.log')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.092s
+
+FAILED (errors=1)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 238, in <module>
+    run_nose(opts.report_file, args, int(opts.iterations), float(opts.duration))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 222, in run_nose
+    nose.run(addplugins=[plugin], argv=argv)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 301, in run
+    return TestProgram(*arg, **kw).success
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 121, in __init__
+    **extra_args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 95, in __init__
+    self.runTests()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 207, in runTests
+    result = self.testRunner.run(self.test)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 68, in run
+    self.config.plugins.finalize(result)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 99, in __call__
+    return self.call(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 167, in simple
+    result = meth(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 62, in finalize
+    raise RuntimeError("Nothing to test.")
+RuntimeError: Nothing to test.

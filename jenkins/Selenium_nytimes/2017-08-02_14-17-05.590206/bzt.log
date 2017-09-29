@@ -1,0 +1,566 @@
+[2017-08-02 14:17:05,557 INFO root] Taurus CLI Tool v1.8.4.1401
+[2017-08-02 14:17:05,557 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_hZmCXN.log', 'option': None, 'aliases': ['report']}
+[2017-08-02 14:17:05,558 DEBUG root] Python: CPython 2.7.13
+[2017-08-02 14:17:05,558 DEBUG root] OS: ('Darwin', 'narsi01mac1752', '16.7.0', 'Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64', 'x86_64', 'i386')
+[2017-08-02 14:17:05,558 INFO root] Starting with configs: ['taurus.yml']
+[2017-08-02 14:17:05,558 DEBUG root] Adding personal config: /Users/narsi01/.bzt-rc
+[2017-08-02 14:17:05,558 INFO Engine] Configuring...
+[2017-08-02 14:17:05,558 DEBUG Engine] Reading extension configs from: /usr/local/etc/bzt.d
+[2017-08-02 14:17:05,558 DEBUG Engine.Configuration] Configs: ['/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/base-config.yml', '/usr/local/etc/bzt.d/99-installID.yml']
+[2017-08-02 14:17:05,558 DEBUG Engine.Configuration] Reading /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/base-config.yml
+[2017-08-02 14:17:05,558 DEBUG Engine.Configuration] Reading /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2017-08-02 14:17:05,580 DEBUG Engine.Configuration] Reading /usr/local/etc/bzt.d/99-installID.yml
+[2017-08-02 14:17:05,580 DEBUG Engine.Configuration] Reading /usr/local/etc/bzt.d/99-installID.yml as YAML
+[2017-08-02 14:17:05,580 DEBUG Engine.Configuration] Configs: ['/Users/narsi01/.bzt-rc', 'taurus.yml']
+[2017-08-02 14:17:05,580 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc
+[2017-08-02 14:17:05,580 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc as YAML
+[2017-08-02 14:17:05,581 DEBUG Engine.Configuration] Reading taurus.yml
+[2017-08-02 14:17:05,581 DEBUG Engine.Configuration] Reading taurus.yml as YAML
+[2017-08-02 14:17:05,585 DEBUG root] Configs: ['/Users/narsi01/.bzt-rc', 'taurus.yml']
+[2017-08-02 14:17:05,585 DEBUG root] Reading /Users/narsi01/.bzt-rc
+[2017-08-02 14:17:05,585 DEBUG root] Reading /Users/narsi01/.bzt-rc as YAML
+[2017-08-02 14:17:05,585 DEBUG root] Reading taurus.yml
+[2017-08-02 14:17:05,586 DEBUG root] Reading taurus.yml as YAML
+[2017-08-02 14:17:05,590 INFO Engine] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+[2017-08-02 14:17:05,592 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective
+[2017-08-02 14:17:05,594 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.yml
+[2017-08-02 14:17:05,605 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.8.4.1401&installID=acde48001122
+[2017-08-02 14:17:05,666 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.json
+[2017-08-02 14:17:05,700 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/merged.yml
+[2017-08-02 14:17:05,701 DEBUG root] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/merged.yml
+[2017-08-02 14:17:05,735 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/merged.json
+[2017-08-02 14:17:05,736 DEBUG root] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/merged.json
+[2017-08-02 14:17:05,767 DEBUG Engine] Add existing artifact (move=False): taurus.yml
+[2017-08-02 14:17:05,767 DEBUG Engine] Copying taurus.yml to /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/taurus.yml
+[2017-08-02 14:17:05,799 DEBUG root] Closing log handler: /var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_hZmCXN.log
+[2017-08-02 14:17:05,868 DEBUG root] Switched writing logs to /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/bzt.log
+[2017-08-02 14:17:05,868 INFO Engine] Preparing...
+[2017-08-02 14:17:05,869 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2017-08-02 14:17:05,869 DEBUG root] Importing module: bzt.modules.aggregator
+[2017-08-02 14:17:06,015 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2017-08-02 14:17:06,015 DEBUG Engine.consolidator] Exception in dehumanize_time(inf)
+[2017-08-02 14:17:06,016 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2017-08-02 14:17:06,016 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2017-08-02 14:17:06,016 DEBUG root] Importing module: bzt.modules.monitoring
+[2017-08-02 14:17:06,898 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2017-08-02 14:17:06,898 DEBUG Engine] Module config: capturehar defaultdict(None, {'class': 'bzt.modules.blazemeter.ServiceStubCaptureHAR'})
+[2017-08-02 14:17:06,898 DEBUG root] Importing module: bzt.modules.blazemeter
+[2017-08-02 14:17:08,275 DEBUG Engine] Taurus updates info: {"latest":"1.9.4","needsUpgrade":true}
+[2017-08-02 14:17:08,275 WARNING Engine] There is newer version of Taurus 1.9.4 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2017-08-02 14:17:11,091 DEBUG root] Loading class: 'ServiceStubCaptureHAR' from <module 'bzt.modules.blazemeter' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2017-08-02 14:17:11,092 DEBUG Engine] Module config: screenshoter defaultdict(None, {'class': 'bzt.modules.blazemeter.ServiceStubScreenshoter'})
+[2017-08-02 14:17:11,092 DEBUG root] Importing module: bzt.modules.blazemeter
+[2017-08-02 14:17:11,092 DEBUG root] Loading class: 'ServiceStubScreenshoter' from <module 'bzt.modules.blazemeter' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2017-08-02 14:17:11,092 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2017-08-02 14:17:11,092 DEBUG root] Importing module: bzt.modules.provisioning
+[2017-08-02 14:17:11,092 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2017-08-02 14:17:11,092 DEBUG Engine] Module config: selenium defaultdict(None, {'class': 'bzt.modules.selenium.SeleniumExecutor'})
+[2017-08-02 14:17:11,092 DEBUG root] Importing module: bzt.modules.selenium
+[2017-08-02 14:17:11,742 DEBUG easyprocess] version=0.2.3
+[2017-08-02 14:17:12,080 DEBUG pyvirtualdisplay] version=0.2.1
+[2017-08-02 14:17:12,142 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/selenium.pyc'>
+[2017-08-02 14:17:12,142 DEBUG Engine.local] Preparing executor: selenium/4433325904
+[2017-08-02 14:17:12,143 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/selenium_tests_report.ldjson
+[2017-08-02 14:17:12,143 DEBUG Engine] Module config: nose defaultdict(None, {'class': 'bzt.modules.python.NoseTester'})
+[2017-08-02 14:17:12,143 DEBUG root] Importing module: bzt.modules.python
+[2017-08-02 14:17:12,144 DEBUG root] Loading class: 'NoseTester' from <module 'bzt.modules.python' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/python.pyc'>
+[2017-08-02 14:17:12,145 DEBUG Engine.nose.TclLibrary] We don't need to check tcl library on this platform
+[2017-08-02 14:17:12,145 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/test_requests.py
+[2017-08-02 14:17:12,145 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/webdriver.log
+[2017-08-02 14:17:12,147 DEBUG Engine.nose.SeleniumScriptBuilder] Generating Test Case test methods
+[2017-08-02 14:17:12,149 DEBUG Engine.nose.SeleniumScriptBuilder] Generating setUp test method
+[2017-08-02 14:17:12,149 DEBUG Engine.nose.SeleniumScriptBuilder] Generating tearDown test method
+[2017-08-02 14:17:12,149 DEBUG Engine.nose.SeleniumScriptBuilder] Generating test method test_00000_https_nytimes_com
+[2017-08-02 14:17:12,186 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2017-08-02 14:17:12,186 DEBUG root] Importing module: bzt.modules.reporting
+[2017-08-02 14:17:12,250 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2017-08-02 14:17:12,250 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2017-08-02 14:17:12,250 DEBUG root] Importing module: bzt.modules.console
+[2017-08-02 14:17:12,250 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2017-08-02 14:17:12,251 DEBUG Engine] Module config: blazemeter defaultdict(None, {'token': '********', 'class': 'bzt.modules.blazemeter.BlazeMeterUploader'})
+[2017-08-02 14:17:12,251 DEBUG root] Importing module: bzt.modules.blazemeter
+[2017-08-02 14:17:12,251 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2017-08-02 14:17:12,256 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2017-08-02 14:17:12,902 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": "blazemeter-backend-package 5550 release/2017-07-25_74 B5550  Mon Jul 31 11:39:45 2017 +0300 1535cc5f43f97da335f5bcd83f24790038d5ccdf\n"
+}
+[2017-08-02 14:17:12,902 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2017-08-02 14:17:13,379 DEBUG User] Response: {
+    "limit": 10,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 21166,
+            "name": "Martin Kowalewski",
+            "thumbnailUrl": "",
+            "salesforceI
+[2017-08-02 14:17:13,379 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=21166&enabled=true&limit=100 None
+[2017-08-02 14:17:13,885 DEBUG User] Response: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 133217,
+            "name": "SE DEMOs",
+            "userId": 307773,
+            "created": 1493664013
+[2017-08-02 14:17:13,885 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=40241&enabled=true&limit=100 None
+[2017-08-02 14:17:14,379 DEBUG User] Response: {
+    "limit": 100,
+    "skip": 0,
+    "total": 3,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 509,
+            "name": "Customer Demo Org",
+            "userId": 86033,
+            "created": 14419
+[2017-08-02 14:17:14,380 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=133217&name=Taurus+Test None
+[2017-08-02 14:17:14,863 DEBUG User] Response: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2017-08-02 14:17:14,863 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=509&name=Taurus+Test None
+[2017-08-02 14:17:15,362 DEBUG User] Response: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2017-08-02 14:17:15,362 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=3130&name=Taurus+Test None
+[2017-08-02 14:17:15,820 DEBUG User] Response: {
+    "limit": 10,
+    "skip": 0,
+    "total": 0,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2017-08-02 14:17:15,820 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?workspaceId=31694&name=Taurus+Test None
+[2017-08-02 14:17:16,282 DEBUG User] Response: {
+    "limit": 10,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 5266492,
+            "name": "Taurus Test",
+            "userId": 106819,
+            "created": 1473296
+[2017-08-02 14:17:16,285 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.yml
+[2017-08-02 14:17:16,350 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.json
+[2017-08-02 14:17:16,384 INFO Engine] Starting...
+[2017-08-02 14:17:16,384 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10442ff50>
+[2017-08-02 14:17:16,384 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10442f410>
+[2017-08-02 14:17:16,384 DEBUG Engine] Startup <bzt.modules.blazemeter.ServiceStubCaptureHAR object at 0x1044176d0>
+[2017-08-02 14:17:16,384 WARNING Engine.capturehar] Stub for service 'capturehar', use cloud provisioning to have it working
+[2017-08-02 14:17:16,384 DEBUG Engine] Startup <bzt.modules.blazemeter.ServiceStubScreenshoter object at 0x10478ce90>
+[2017-08-02 14:17:16,384 WARNING Engine.screenshoter] Stub for service 'screenshoter', use cloud provisioning to have it working
+[2017-08-02 14:17:16,384 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x1043e7fd0>
+[2017-08-02 14:17:16,385 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10842edd0>
+[2017-08-02 14:17:16,385 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x108444390>
+[2017-08-02 14:17:16,385 INFO Engine.console] Waiting for results...
+[2017-08-02 14:17:16,385 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x108444510>
+[2017-08-02 14:17:16,385 INFO Engine.blazemeter] Initiating data feeding...
+[2017-08-02 14:17:16,385 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/tests/5266492/start-external None
+[2017-08-02 14:17:17,095 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5982415cc69cf",
+            "name": "Taurus Test",
+            "userId": 106819,
+            "offset": 0,
+            "statusCode": 15,
+            "st
+[2017-08-02 14:17:17,096 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/#/masters/16490787
+[2017-08-02 14:17:17,523 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x104417490>
+[2017-08-02 14:17:17,523 DEBUG Engine.local] Delay setup for nose/req: 0(start-at) + 0(delay) = 0
+[2017-08-02 14:17:17,526 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.yml
+[2017-08-02 14:17:17,603 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.json
+[2017-08-02 14:17:17,661 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2017-08-02 14:17:17,919 INFO Engine.console] Waiting for finish...
+[2017-08-02 14:17:30,726 WARNING Engine] Please wait for graceful shutdown...
+[2017-08-02 14:17:30,732 DEBUG root] Leveled up log file verbosity
+[2017-08-02 14:17:30,732 INFO Engine] Shutting down...
+[2017-08-02 14:17:30,739 DEBUG Engine.local] Shutdown nose/req
+[2017-08-02 14:17:30,739 DEBUG Engine.selenium] Selenium tests ran for 13.0778419971 seconds
+[2017-08-02 14:17:30,739 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x1043fe090>]/{<logging.StreamHandler object at 0x1043fe090>: <open file '<stdout>', mode 'w' at 0x1002ad150>}
+[2017-08-02 14:17:30,741 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.yml
+[2017-08-02 14:17:30,820 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.json
+[2017-08-02 14:17:30,861 ERROR root] Child Process Error: Test runner req (NoseTester) has failed with retcode 1 
+ ERROR
+
+======================================================================
+ERROR: test suite for <class 'test_requests.TestRequests'>
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/test_requests.py", line 17, in setUpClass
+    cls.driver = webdriver.Chrome(service_log_path='/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/webdriver.log')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.092s
+
+FAILED (errors=1)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 238, in <module>
+    run_nose(opts.report_file, args, int(opts.iterations), float(opts.duration))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 222, in run_nose
+    nose.run(addplugins=[plugin], argv=argv)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 301, in run
+    return TestProgram(*arg, **kw).success
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 121, in __init__
+    **extra_args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 95, in __init__
+    self.runTests()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 207, in runTests
+    result = self.testRunner.run(self.test)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 68, in run
+    self.config.plugins.finalize(result)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 99, in __call__
+    return self.call(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 167, in simple
+    result = meth(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 62, in finalize
+    raise RuntimeError("Nothing to test.")
+RuntimeError: Nothing to test.
+[2017-08-02 14:17:30,863 DEBUG root] ToolError: Test runner req (NoseTester) has failed with retcode 1 
+ ERROR
+
+======================================================================
+ERROR: test suite for <class 'test_requests.TestRequests'>
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/test_requests.py", line 17, in setUpClass
+    cls.driver = webdriver.Chrome(service_log_path='/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/webdriver.log')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.092s
+
+FAILED (errors=1)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 238, in <module>
+    run_nose(opts.report_file, args, int(opts.iterations), float(opts.duration))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 222, in run_nose
+    nose.run(addplugins=[plugin], argv=argv)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 301, in run
+    return TestProgram(*arg, **kw).success
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 121, in __init__
+    **extra_args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 95, in __init__
+    self.runTests()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 207, in runTests
+    result = self.testRunner.run(self.test)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 68, in run
+    self.config.plugins.finalize(result)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 99, in __call__
+    return self.call(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 167, in simple
+    result = meth(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 62, in finalize
+    raise RuntimeError("Nothing to test.")
+RuntimeError: Nothing to test.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/cli.py", line 213, in perform
+    self.engine.run()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 168, in run
+    reraise(exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 150, in run
+    self._wait()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 186, in _wait
+    while not self._check_modules_list():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 176, in _check_modules_list
+    finished |= bool(module.check())
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 123, in check
+    if executor.check():
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/selenium.py", line 253, in check
+    return self.runner.check()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 1102, in check
+    raise ToolError(msg % (self.label, self.__class__.__name__, ret_code, std_err.strip()))
+ToolError: Test runner req (NoseTester) has failed with retcode 1 
+ ERROR
+
+======================================================================
+ERROR: test suite for <class 'test_requests.TestRequests'>
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 209, in run
+    self.setUp()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 292, in setUp
+    self.setupContext(ancestor)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/suite.py", line 315, in setupContext
+    try_run(context, names)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/test_requests.py", line 17, in setUpClass
+    cls.driver = webdriver.Chrome(service_log_path='/Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/webdriver.log')
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 62, in __init__
+    self.service.start()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/selenium/webdriver/common/service.py", line 81, in start
+    os.path.basename(self.path), self.start_error_message)
+WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.092s
+
+FAILED (errors=1)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 238, in <module>
+    run_nose(opts.report_file, args, int(opts.iterations), float(opts.duration))
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 222, in run_nose
+    nose.run(addplugins=[plugin], argv=argv)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 301, in run
+    return TestProgram(*arg, **kw).success
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 121, in __init__
+    **extra_args)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/main.py", line 95, in __init__
+    self.runTests()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 207, in runTests
+    result = self.testRunner.run(self.test)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/core.py", line 68, in run
+    self.config.plugins.finalize(result)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 99, in __call__
+    return self.call(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/nose/plugins/manager.py", line 167, in simple
+    result = meth(*arg, **kw)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/resources/nose_plugin.py", line 62, in finalize
+    raise RuntimeError("Nothing to test.")
+RuntimeError: Nothing to test.
+[2017-08-02 14:17:30,863 INFO Engine] Post-processing...
+[2017-08-02 14:17:30,863 DEBUG Engine.local] Post-process nose/req
+[2017-08-02 14:17:30,863 DEBUG Engine.local] Exception in post_process of SeleniumExecutor: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206 Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 161, in post_process
+    raise ToolError(msg % (executor.label, executor.__class__.__name__, self.engine.artifacts_dir))
+ToolError: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+
+[2017-08-02 14:17:30,863 DEBUG Engine] post_process: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 232, in post_process
+    module.post_process()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 168, in post_process
+    reraise(exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 161, in post_process
+    raise ToolError(msg % (executor.label, executor.__class__.__name__, self.engine.artifacts_dir))
+ToolError: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+
+[2017-08-02 14:17:30,864 DEBUG Engine.selenium.TestReportReader.LDJSONReader] No data to start reading yet
+[2017-08-02 14:17:30,864 DEBUG LoadSamplesReader] Buffer len: 0
+[2017-08-02 14:17:30,864 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2017-08-02 14:17:30,864 INFO Engine.final-stats] Test duration: 0:00:14
+[2017-08-02 14:17:30,864 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2017-08-02 14:17:30,864 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 0
+[2017-08-02 14:17:30,864 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2017-08-02 14:17:30,864 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5982415cc69cf&signature=eb7dcc56e3855c1f002271799f843eb6&test_id=5266492&user_id=106819&pq=0&target=labels_bulk&update=1 {
+ "sourceID": 4433659152, 
+ "labels": [], 
+ "final": true
+}
+[2017-08-02 14:17:31,326 DEBUG User] Response: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext-5982415cc69cf","name":"Taurus Test","statusCode":15,"status":"INITIALIZING"}}}
+[2017-08-02 14:17:31,375 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5982415cc69cf/files?signature=eb7dcc56e3855c1f002271799f843eb6 --===============9154144575422149648==
+Content-Disposition: file; name="file"; filename="r-ext-5982415cc69cf-0-c.monitoring.json"
+Content-Type: application/json
+
+{
+ "kpis": {
+  "Connections": "Connections", 
+  "CPU": "CPU", 
+  "Network I/O": "Network I
+[2017-08-02 14:17:32,212 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext-5982415cc69cf-0-c.monitoring.json"
+    ]
+}
+[2017-08-02 14:17:32,269 INFO Engine.blazemeter] Uploading all artifacts as artifacts.zip ...
+[2017-08-02 14:17:32,269 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5982415cc69cf/files?signature=eb7dcc56e3855c1f002271799f843eb6 --===============0538832995454025410==
+Content-Disposition: file; name="file"; filename="artifacts.zip"
+Content-Type: application/zip
+
+PK    0rKK[ñﬁ‡  ÑÄ     bzt.logÌ]}s€Fèˇﬂ3˝;∫π»N%æSıDÌ∏∂”∫MúLÏ\û{rEÆ$÷…rI;nûﬁg?`IJîDJrm)…ç<áØ¿o, w◊I6⁄
+[2017-08-02 14:17:33,034 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip"
+    ]
+}
+[2017-08-02 14:17:33,035 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5982415cc69cf/files?signature=eb7dcc56e3855c1f002271799f843eb6 --===============3737804327768659085==
+Content-Disposition: file; name="file"; filename="artifacts.zip.tail.bz"
+Content-Type: application/x-bzip
+
+32K bzt.log
+7K effective.json
+5K effective.yml
+777  merged.json
+535  merged.yml
+3K nose.err
+0  nose.out
+0 
+[2017-08-02 14:17:33,588 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip.tail.bz"
+    ]
+}
+[2017-08-02 14:17:33,589 INFO Engine.blazemeter] Uploading /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/bzt.log
+[2017-08-02 14:17:33,589 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5982415cc69cf/files?signature=eb7dcc56e3855c1f002271799f843eb6 --===============0244839091330759595==
+Content-Disposition: file; name="file"; filename="bzt.log"
+Content-Type: text/plain
+
+[2017-08-02 14:17:05,557 INFO root] Taurus CLI Tool v1.8.4.1401
+[2017-08-02 14:17:05,557 DEBUG root] Command-line options: {'ver
+[2017-08-02 14:17:34,756 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log"
+    ]
+}
+[2017-08-02 14:17:34,756 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-5982415cc69cf/files?signature=eb7dcc56e3855c1f002271799f843eb6 --===============0015397758208578048==
+Content-Disposition: file; name="file"; filename="bzt.log.tail.bz"
+Content-Type: application/x-bzip
+
+    reraise(exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/
+[2017-08-02 14:17:35,339 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log.tail.bz"
+    ]
+}
+[2017-08-02 14:17:35,339 DEBUG Engine.blazemeter] Set last check time to: 1501708632.25
+[2017-08-02 14:17:35,340 INFO Engine.blazemeter] Ending data feeding...
+[2017-08-02 14:17:35,340 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5982415cc69cf/stop None
+[2017-08-02 14:17:35,948 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": true
+}
+[2017-08-02 14:17:35,948 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/sessions/r-ext-5982415cc69cf None
+[2017-08-02 14:17:36,486 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-5982415cc69cf",
+        "name": "Taurus Test",
+        "userId": 106819,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended": 1501708655,
+[2017-08-02 14:17:36,486 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/sessions/r-ext-5982415cc69cf {
+ "note": "ToolError: Test runner req (NoseTester) has failed with retcode 1 \n ERROR\n\n======================================================================\nERROR: test suite for <class 'test_requests.TestRequests'>\n----------------------------------
+[2017-08-02 14:17:36,994 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-5982415cc69cf",
+        "name": "Taurus Test",
+        "userId": 106819,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended": 1501708655,
+[2017-08-02 14:17:36,994 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/masters/16490787 None
+[2017-08-02 14:17:37,477 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 16490787,
+        "name": "Taurus Test",
+        "userId": 106819,
+        "ended": 1501708655,
+        "created": 1501708636,
+        "updated": 1501708655,
+        "isSandbox": fals
+[2017-08-02 14:17:37,477 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/masters/16490787 {
+ "note": "ToolError: Test runner req (NoseTester) has failed with retcode 1 \n ERROR\n\n======================================================================\nERROR: test suite for <class 'test_requests.TestRequests'>\n----------------------------------
+[2017-08-02 14:17:37,939 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 16490787,
+        "name": "Taurus Test",
+        "userId": 106819,
+        "ended": 1501708655,
+        "isSandbox": false,
+        "created": 1501708636,
+        "updated": 150170865
+[2017-08-02 14:17:37,939 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/#/masters/16490787
+[2017-08-02 14:17:37,942 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.yml
+[2017-08-02 14:17:38,011 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/effective.json
+[2017-08-02 14:17:38,050 DEBUG root] Child Process Error: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+[2017-08-02 14:17:38,050 DEBUG root] ToolError: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/cli.py", line 220, in perform
+    self.engine.post_process()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 245, in post_process
+    reraise(exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/engine.py", line 232, in post_process
+    module.post_process()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 168, in post_process
+    reraise(exc_info)
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/bzt/modules/provisioning.py", line 161, in post_process
+    raise ToolError(msg % (executor.label, executor.__class__.__name__, self.engine.artifacts_dir))
+ToolError: Empty results, most likely req (SeleniumExecutor) failed. Actual reason for this can be found in logs under /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+[2017-08-02 14:17:38,050 INFO root] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206
+[2017-08-02 14:17:38,050 WARNING root] Done performing with code: 1
+[2017-08-02 14:17:38,050 DEBUG root] Closing log handler: /Users/narsi01/Desktop/JWC_SN/jenkins/Selenium_nytimes/2017-08-02_14-17-05.590206/bzt.log
