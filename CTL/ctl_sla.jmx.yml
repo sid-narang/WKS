@@ -1,7 +1,8 @@
 ---
 modules:
   blazemeter:
-    test: CTL Taurus SLA2
+    test: CTL Taurus SLA
+    token: a968786f085e09e3e404
 
 execution:
 - concurrency: 10
@@ -89,4 +90,12 @@ scenarios:
     store-cache: true
     store-cookie: true
     use-dns-cache-mgr: false
+    
+reporting:
+- module: final_stats
+  dump-csv: aggregate.csv
+- module: junit-xml
+  filename: pass-fail.xml
+  data-source: pass-fail
+
 
