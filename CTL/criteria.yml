@@ -2,4 +2,4 @@
 reporting:
 - module: passfail
   criteria:
-    - avg-rt>340ms for 5s, stop as failed
+    - avg-rt>350ms for 5s, stop as failed

@@ -1,0 +1,504 @@
+{
+ "settings": {
+  "check-updates": true, 
+  "check-interval": 1, 
+  "aggregator": "consolidator", 
+  "default-executor": "jmeter", 
+  "proxy": {}, 
+  "artifacts-dir": "%Y-%m-%d_%H-%M-%S.%f", 
+  "hostaliases": {}
+ }, 
+ "reporting": [
+  {
+   "dump-csv": null, 
+   "module": "final-stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
+  }, 
+  {
+   "module": "console"
+  }, 
+  {
+   "dump-csv": "aggregate.csv", 
+   "module": "final_stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
+  }, 
+  {
+   "data-source": "pass-fail", 
+   "module": "junit-xml", 
+   "filename": "pass-fail.xml"
+  }, 
+  {
+   "session-id": null, 
+   "report-name": null, 
+   "forced-last-check": 1.51e+09, 
+   "module": "blazemeter", 
+   "project": null, 
+   "test": "CTL Taurus SLA"
+  }
+ ], 
+ "modules": {
+  "appium": {
+   "class": "bzt.modules.services.AppiumLoader"
+  }, 
+  "ab": {
+   "class": "bzt.modules.ab.ApacheBenchmarkExecutor"
+  }, 
+  "proxy2jmx": {
+   "class": "bzt.modules.proxy2jmx.Proxy2JMX"
+  }, 
+  "android-emulator": {
+   "class": "bzt.modules.services.AndroidEmulatorLoader"
+  }, 
+  "blazemeter": {
+   "send-interval": 30, 
+   "data-address": "https://data.blazemeter.com", 
+   "send-custom-tables": false, 
+   "artifact-upload-size-limit": 10, 
+   "report-name": null, 
+   "monitoring-buffer-limit": 500, 
+   "send-monitoring": true, 
+   "class": "bzt.modules.blazemeter.BlazeMeterUploader", 
+   "project": null, 
+   "token": "********", 
+   "timeout": 10, 
+   "address": "https://a.blazemeter.com", 
+   "test": "CTL Taurus SLA", 
+   "send-custom-metrics": false, 
+   "request-logging-limit": 256, 
+   "browser-open": "start", 
+   "public-report": false
+  }, 
+  "testng": {
+   "class": "bzt.modules.java.TestNGTester"
+  }, 
+  "screenshoter": {
+   "class": "bzt.modules.blazemeter.ServiceStubScreenshoter"
+  }, 
+  "cloud": {
+   "class": "bzt.modules.blazemeter.CloudProvisioning", 
+   "default-location": "us-central1-a"
+  }, 
+  "install-checker": {
+   "class": "bzt.modules.services.InstallChecker"
+  }, 
+  "monitoring": {
+   "class": "bzt.modules.monitoring.Monitoring"
+  }, 
+  "grinder": {
+   "class": "bzt.modules.grinder.GrinderExecutor", 
+   "properties": {
+    "grinder.useConsole": false
+   }
+  }, 
+  "selenium": {
+   "class": "bzt.modules.selenium.SeleniumExecutor"
+  }, 
+  "tsung": {
+   "class": "bzt.modules.tsung.TsungExecutor"
+  }, 
+  "gatling": {
+   "class": "bzt.modules.gatling.GatlingExecutor", 
+   "properties": {
+    "gatling.data.file.bufferSize": 256
+   }
+  }, 
+  "capturehar": {
+   "class": "bzt.modules.blazemeter.ServiceStubCaptureHAR"
+  }, 
+  "pbench": {
+   "class": "bzt.modules.pbench.PBenchExecutor"
+  }, 
+  "chrome-metric-reporter": {
+   "class": "bzt.modules.chrome.MetricReporter"
+  }, 
+  "chrome-profiler": {
+   "class": "bzt.modules.chrome.ChromeProfiler", 
+   "processors": {
+    "trace": {
+     "extractors": [
+      "bzt.modules.chrome.TabNameExtractor", 
+      "bzt.modules.chrome.MemoryMetricsExtractor"
+     ], 
+     "class": "bzt.modules.chrome.TraceProcessor"
+    }
+   }
+  }, 
+  "shellexec": {
+   "class": "bzt.modules.shellexec.ShellExecutor", 
+   "env": {
+    "TAURUS_INDEX_ALL": ""
+   }
+  }, 
+  "siege": {
+   "class": "bzt.modules.siege.SiegeExecutor"
+  }, 
+  "rspec": {
+   "class": "bzt.modules.ruby.RSpecTester"
+  }, 
+  "console": {
+   "screen": "console", 
+   "disable": "auto", 
+   "class": "bzt.modules.console.ConsoleStatusReporter"
+  }, 
+  "mocha": {
+   "class": "bzt.modules.javascript.MochaTester"
+  }, 
+  "final_stats": {
+   "class": "bzt.modules.reporting.FinalStatus"
+  }, 
+  "functional-consolidator": {
+   "class": "bzt.modules.functional.FunctionalAggregator"
+  }, 
+  "jmeter": {
+   "version": "3.1", 
+   "gui": false, 
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true", 
+    "summariser.name": "", 
+    "jmeter.save.saveservice.connect_time": "true", 
+    "mode": "Stripped", 
+    "jmeterengine.force.system.exit": "true"
+   }, 
+   "class": "bzt.modules.jmeter.JMeterExecutor", 
+   "system-properties": {}, 
+   "memory-xmx": null, 
+   "download-link": null, 
+   "plugins": [
+    "jpgc-casutg", 
+    "jpgc-dummy", 
+    "jpgc-ffw", 
+    "jpgc-fifo", 
+    "jpgc-functions", 
+    "jpgc-json", 
+    "jpgc-perfmon", 
+    "jpgc-prmctl", 
+    "jpgc-tst"
+   ], 
+   "xml-jtl-flags": {}, 
+   "path": "/Users/narsi01/.bzt/jmeter-taurus/bin/jmeter.sh", 
+   "shutdown-wait": 5, 
+   "shutdown-port": 4445
+  }, 
+  "local": {
+   "sequential": false, 
+   "class": "bzt.modules.provisioning.Local"
+  }, 
+  "locust": {
+   "class": "bzt.modules.locustio.LocustIOExecutor"
+  }, 
+  "junit": {
+   "class": "bzt.modules.java.JUnitTester"
+  }, 
+  "final-stats": {
+   "class": "bzt.modules.reporting.FinalStatus"
+  }, 
+  "passfail": {
+   "class": "bzt.modules.passfail.PassFailStatus"
+  }, 
+  "nose": {
+   "class": "bzt.modules.python.NoseTester"
+  }, 
+  "consolidator": {
+   "max-buffer-len": Infinity, 
+   "buffer-multiplier": 2, 
+   "ignore-labels": [
+    "ignore"
+   ], 
+   "min-buffer-len": 2, 
+   "percentiles": [
+    0, 
+    50, 
+    90, 
+    95, 
+    99, 
+    99.9, 
+    100
+   ], 
+   "rtimes-len": 1000, 
+   "buffer-scale-choice": 0.5, 
+   "generalize-labels": false, 
+   "class": "bzt.modules.aggregator.ConsolidatingAggregator"
+  }, 
+  "unpacker": {
+   "class": "bzt.modules.services.Unpacker"
+  }, 
+  "junit-xml": {
+   "class": "bzt.modules.reporting.JUnitXMLReporter"
+  }
+ }, 
+ "provisioning": "local", 
+ "scenarios": {
+  "Thread Group": {
+   "concurrent-pool-size": 4, 
+   "store-cache": true, 
+   "modifications": {}, 
+   "force-parent-sample": true, 
+   "retrieve-resources": true, 
+   "content-encoding": null, 
+   "store-cookie": true, 
+   "retrieve-resources-regex": null, 
+   "headers": {}, 
+   "think-time": null, 
+   "data-sources": [], 
+   "timeout": null, 
+   "disable-listeners": true, 
+   "requests": [
+    {
+     "think-time": null, 
+     "body": null, 
+     "follow-redirects": true, 
+     "timeout": null, 
+     "content-encoding": null, 
+     "url": "http://blazedemo.com/", 
+     "jsr223": [], 
+     "assert-jsonpath": [], 
+     "extract-xpath": {}, 
+     "upload-files": [], 
+     "label": "http://www.centurylink.com/index_a.html", 
+     "assert": [], 
+     "headers": {
+      "Upgrade-Insecure-Requests": "1", 
+      "Accept-Language": "en-US,en;q=0.8", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", 
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+     }, 
+     "assert-xpath": [], 
+     "body-file": null, 
+     "keepalive": null, 
+     "extract-regexp": {}, 
+     "method": "GET", 
+     "extract-css-jquery": {}, 
+     "extract-jsonpath": {}
+    }, 
+    {
+     "body": {
+      "toPort": "Buenos Aires", 
+      "fromPort": "Paris"
+     }, 
+     "think-time": null, 
+     "follow-redirects": true, 
+     "timeout": null, 
+     "content-encoding": null, 
+     "url": "http://blazedemo.com/reserve.php", 
+     "jsr223": [], 
+     "assert-jsonpath": [], 
+     "extract-xpath": {}, 
+     "upload-files": [], 
+     "label": "http://www.centurylink.com/home/", 
+     "assert": [], 
+     "headers": {
+      "Origin": "http://blazedemo.com", 
+      "Accept-Language": "en-US,en;q=0.8", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", 
+      "Upgrade-Insecure-Requests": "1", 
+      "Referer": "http://blazedemo.com/", 
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36", 
+      "Content-Type": "application/x-www-form-urlencoded"
+     }, 
+     "assert-xpath": [], 
+     "body-file": null, 
+     "keepalive": null, 
+     "extract-regexp": {}, 
+     "method": "POST", 
+     "extract-css-jquery": {}, 
+     "extract-jsonpath": {}
+    }, 
+    {
+     "body": {
+      "toPort": "Buenos Aires", 
+      "fromPort": "Paris", 
+      "price": "432.98", 
+      "flight": "234", 
+      "airline": "United Airlines"
+     }, 
+     "think-time": null, 
+     "follow-redirects": true, 
+     "timeout": null, 
+     "content-encoding": null, 
+     "url": "http://blazedemo.com/purchase.php", 
+     "jsr223": [], 
+     "assert-jsonpath": [], 
+     "extract-xpath": {}, 
+     "upload-files": [], 
+     "label": "http://www.centurylink.com/home/help.html", 
+     "assert": [], 
+     "headers": {
+      "Origin": "http://blazedemo.com", 
+      "Accept-Language": "en-US,en;q=0.8", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", 
+      "Upgrade-Insecure-Requests": "1", 
+      "Referer": "http://blazedemo.com/reserve.php", 
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36", 
+      "Content-Type": "application/x-www-form-urlencoded"
+     }, 
+     "assert-xpath": [], 
+     "body-file": null, 
+     "keepalive": null, 
+     "extract-regexp": {}, 
+     "method": "POST", 
+     "extract-css-jquery": {}, 
+     "extract-jsonpath": {}
+    }, 
+    {
+     "body": {
+      "creditCardYear": "2017", 
+      "city": "", 
+      "creditCardMonth": "11", 
+      "_token": "", 
+      "inputName": "", 
+      "zipCode": "", 
+      "state": "", 
+      "address": "", 
+      "creditCardNumber": "", 
+      "nameOnCard": "", 
+      "cardType": "visa"
+     }, 
+     "think-time": null, 
+     "follow-redirects": true, 
+     "timeout": null, 
+     "content-encoding": null, 
+     "url": "http://blazedemo.com/confirmation.php", 
+     "jsr223": [], 
+     "assert-jsonpath": [], 
+     "extract-xpath": {}, 
+     "upload-files": [], 
+     "label": "http://www.centurylink.com/home/help/contact.html", 
+     "assert": [], 
+     "headers": {
+      "Origin": "http://blazedemo.com", 
+      "Accept-Language": "en-US,en;q=0.8", 
+      "Accept-Encoding": "gzip, deflate", 
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", 
+      "Upgrade-Insecure-Requests": "1", 
+      "Referer": "http://blazedemo.com/purchase.php", 
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36", 
+      "Content-Type": "application/x-www-form-urlencoded"
+     }, 
+     "assert-xpath": [], 
+     "body-file": null, 
+     "keepalive": null, 
+     "extract-regexp": {}, 
+     "method": "POST", 
+     "extract-css-jquery": {}, 
+     "extract-jsonpath": {}
+    }
+   ], 
+   "default-address": null, 
+   "variables": {}, 
+   "properties": {}, 
+   "use-dns-cache-mgr": false, 
+   "keepalive": null
+  }
+ }, 
+ "version": "1.8.4.1401", 
+ "cli-aliases": {
+  "gui": {
+   "modules": {
+    "jmeter": {
+     "gui": true
+    }
+   }
+  }, 
+  "locations": {
+   "modules": {
+    "cloud": {
+     "dump-locations": true
+    }
+   }, 
+   "provisioning": "cloud"
+  }, 
+  "sequential": {
+   "modules": {
+    "local": {
+     "sequential": true
+    }
+   }
+  }, 
+  "func": {
+   "modules": {
+    "console": {
+     "disable": true
+    }
+   }, 
+   "settings": {
+    "aggregator": "functional-consolidator"
+   }
+  }, 
+  "report": {
+   "reporting": [
+    "blazemeter"
+   ]
+  }, 
+  "install-tools": {
+   "services": [
+    "install-checker"
+   ]
+  }, 
+  "detach": {
+   "modules": {
+    "cloud": {
+     "detach": true
+    }
+   }
+  }, 
+  "local": {
+   "provisioning": "local"
+  }, 
+  "cloud": {
+   "provisioning": "cloud"
+  }
+ }, 
+ "install-id": "acde48001122", 
+ "services": [
+  {
+   "run-at": "local", 
+   "local": [
+    {
+     "metrics": [
+      "cpu", 
+      "mem", 
+      "bytes-sent", 
+      "bytes-recv", 
+      "disk-read", 
+      "disk-write", 
+      "disk-space", 
+      "engine-loop", 
+      "conn-all"
+     ]
+    }
+   ], 
+   "module": "monitoring"
+  }
+ ], 
+ "execution": [
+  {
+   "iterations": 1000, 
+   "scenario": "Thread Group", 
+   "ramp-up": "60s", 
+   "start-at": 0, 
+   "distributed": [], 
+   "delay": 0, 
+   "throughput": {
+    "local": null
+   }, 
+   "write-xml-jtl": "error", 
+   "concurrency": {
+    "local": 10
+   }, 
+   "executor": "jmeter", 
+   "steps": null, 
+   "hold-for": "300s"
+  }
+ ]
+}

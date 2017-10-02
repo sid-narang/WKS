@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="548" lt="187" ts="1506985881928" s="false" lb="http://www.centurylink.com/home/help/contact.html" rc="200" rm="Embedded resource download error:http://blazedemo.com/assets/bootstrap-table.css code:Non HTTP response code: java.net.SocketException message:Non HTTP response message: Socket closed, " tn="ThreadGroup 1-7" dt="text" de="UTF-8" by="41731" ng="4" na="4">
+  <httpSample t="189" lt="187" ts="1506985881928" s="true" lb="http://blazedemo.com/confirmation.php" rc="200" rm="OK" tn="ThreadGroup 1-7" dt="text" de="UTF-8" by="8941" ng="4" na="4">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 02 Oct 2017 23:11:22 GMT
+Server: Apache
+transfer-encoding: chunked
+Connection: keep-alive
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 132
+Host: blazedemo.com
+</requestHeader>
+    <java.net.URL>http://blazedemo.com/confirmation.php</java.net.URL>
+  </httpSample>
+  <httpSample t="43" lt="32" ts="1506985882117" s="true" lb="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" rc="200" rm="OK" tn="ThreadGroup 1-7" dt="text" de="UTF-8" by="29698" ng="4" na="4">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Type: text/javascript; charset=UTF-8
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Date: Tue, 29 Aug 2017 14:21:37 GMT
+Expires: Wed, 29 Aug 2018 14:21:37 GMT
+Last-Modified: Tue, 20 Dec 2016 18:17:03 GMT
+X-Content-Type-Options: nosniff
+Server: sffe
+X-XSS-Protection: 1; mode=block
+Cache-Control: public, max-age=31536000, stale-while-revalidate=2592000
+Age: 2969385
+Content-Length: 29195
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Host: ajax.googleapis.com
+</requestHeader>
+    <java.net.URL>http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js</java.net.URL>
+  </httpSample>
+  <httpSample t="180" lt="0" ts="1506985882117" s="true" lb="http://blazedemo.com/assets/bootstrap.min.js" rc="304" rm="Not Modified" tn="ThreadGroup 1-7" dt="" de="" by="106" ng="4" na="4">
+    <responseHeader class="java.lang.String">HTTP/1.1 304 Not Modified
+Date: Mon, 02 Oct 2017 23:11:22 GMT
+Server: Apache
+Connection: keep-alive
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+If-Modified-Since: Sun, 26 Mar 2017 14:46:18 GMT
+Host: blazedemo.com
+</requestHeader>
+    <java.net.URL>http://blazedemo.com/assets/bootstrap.min.js</java.net.URL>
+  </httpSample>
+  <httpSample t="187" lt="0" ts="1506985882117" s="true" lb="http://blazedemo.com/assets/bootstrap-table.js" rc="304" rm="Not Modified" tn="ThreadGroup 1-7" dt="" de="" by="106" ng="4" na="4">
+    <responseHeader class="java.lang.String">HTTP/1.1 304 Not Modified
+Date: Mon, 02 Oct 2017 23:11:22 GMT
+Server: Apache
+Connection: keep-alive
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+If-Modified-Since: Sun, 26 Mar 2017 14:46:18 GMT
+Host: blazedemo.com
+</requestHeader>
+    <java.net.URL>http://blazedemo.com/assets/bootstrap-table.js</java.net.URL>
+  </httpSample>
+  <httpSample t="186" lt="0" ts="1506985882117" s="true" lb="http://blazedemo.com/assets/bootstrap.min.css" rc="304" rm="Not Modified" tn="ThreadGroup 1-7" dt="" de="" by="106" ng="4" na="4">
+    <responseHeader class="java.lang.String">HTTP/1.1 304 Not Modified
+Date: Mon, 02 Oct 2017 23:11:22 GMT
+Server: Apache
+Connection: keep-alive
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+If-Modified-Since: Sun, 26 Mar 2017 14:46:18 GMT
+Host: blazedemo.com
+</requestHeader>
+    <java.net.URL>http://blazedemo.com/assets/bootstrap.min.css</java.net.URL>
+  </httpSample>
+  <httpSample t="316" lt="0" ts="1506985882160" s="false" lb="http://blazedemo.com/assets/bootstrap-table.css" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Socket closed" tn="ThreadGroup 1-7" dt="text" de="" by="2774" ng="4" na="4">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+If-Modified-Since: Sun, 26 Mar 2017 14:46:18 GMT
+Host: blazedemo.com
+</requestHeader>
+    <responseData class="java.lang.String">java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.read(SocketInputStream.java:204)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:158)
+	at org.apache.http.impl.io.SocketInputBuffer.fillBuffer(SocketInputBuffer.java:82)
+	at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:271)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:281)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:259)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.receiveResponseHeader(ManagedClientConnectionImpl.java:209)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.receiveResponseHeader(MeasuringConnectionManager.java:212)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:686)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:488)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase$ASyncSample.call(HTTPSamplerBase.java:2012)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase$ASyncSample.call(HTTPSamplerBase.java:1980)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+    <cookies class="java.lang.String"></cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>http://blazedemo.com/assets/bootstrap-table.css</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Cache-Control: no-cache
+Content-Type: text/html; charset=UTF-8
+Date: Mon, 02 Oct 2017 23:11:22 GMT
+Server: Apache
+transfer-encoding: chunked
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Origin: http://blazedemo.com
+Accept-Language: en-US,en;q=0.8
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+Referer: http://blazedemo.com/purchase.php
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 132
+Host: blazedemo.com
+</requestHeader>
+  <responseData class="java.lang.String">&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;&lt;script type=&quot;text/javascript&quot;&gt;window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if(&quot;function&quot;==typeof __nr_require)return __nr_require;for(var o=0;o&lt;t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e(&quot;handle&quot;),a=e(2),u=e(3),f=e(&quot;ee&quot;).get(&quot;tracer&quot;),c=e(&quot;loader&quot;),s=NREUM;&quot;undefined&quot;==typeof window.newrelic&amp;&amp;(newrelic=s);var p=[&quot;setPageViewName&quot;,&quot;setCustomAttribute&quot;,&quot;setErrorHandler&quot;,&quot;finished&quot;,&quot;addToTrace&quot;,&quot;inlineHit&quot;,&quot;addRelease&quot;],d=&quot;api-&quot;,l=d+&quot;ixn-&quot;;a(p,function(e,n){s[n]=o(d+n,!0,&quot;api&quot;)}),s.addPageAction=o(d+&quot;addPageAction&quot;,!0),s.setCurrentRouteName=o(d+&quot;routeName&quot;,!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o=&quot;function&quot;==typeof n;return i(l+&quot;tracer&quot;,[c.now(),e,t],r),function(){if(f.emit((o?&quot;&quot;:&quot;no-&quot;)+&quot;fn-start&quot;,[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit(&quot;fn-end&quot;,[c.now()],t)}}}};a(&quot;setName,setAttribute,save,ignore,onEnd,getContext,end,get&quot;.split(&quot;,&quot;),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){&quot;string&quot;==typeof e&amp;&amp;(e=new Error(e)),i(&quot;err&quot;,[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r=&quot;&quot;,i=0;for(r in e)o.call(e,r)&amp;&amp;(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),&quot;undefined&quot;==typeof t&amp;&amp;(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o&lt;0?0:o);++r&lt;o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:&quot;undefined&quot;!=typeof window.performance&amp;&amp;window.performance.timing&amp;&amp;&quot;undefined&quot;!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&amp;&amp;e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&amp;&amp;e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c&lt;f;c++)u[c].apply(a,r);var p=s[y[t]];return p&amp;&amp;p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||&quot;feature&quot;,y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&amp;&amp;(d.aborted=!0,s=d.backlog={})}var u=&quot;nr@context&quot;,f=e(&quot;gos&quot;),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&amp;&amp;Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e(&quot;ee&quot;).get(&quot;handle&quot;);n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||&quot;object&quot;!==n&amp;&amp;&quot;function&quot;!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i=&quot;nr@id&quot;,a=e(&quot;gos&quot;);n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName(&quot;script&quot;)[0];if(setTimeout(s.abort,3e4),!(e&amp;&amp;e.licenseKey&amp;&amp;e.applicationID&amp;&amp;n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f(&quot;mark&quot;,[&quot;onload&quot;,a()+h.offset],null,&quot;api&quot;);var t=d.createElement(&quot;script&quot;);t.src=&quot;https://&quot;+e.agent,n.parentNode.insertBefore(t,n)}}function o(){&quot;complete&quot;===d.readyState&amp;&amp;i()}function i(){f(&quot;mark&quot;,[&quot;domContent&quot;,a()+h.offset],null,&quot;api&quot;)}function a(){return E.exists&amp;&amp;performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e(&quot;handle&quot;),c=e(2),s=e(&quot;ee&quot;),p=window,d=p.document,l=&quot;addEventListener&quot;,m=&quot;attachEvent&quot;,w=p.XMLHttpRequest,g=w&amp;&amp;w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=&quot;&quot;+location,y={beacon:&quot;bam.nr-data.net&quot;,errorBeacon:&quot;bam.nr-data.net&quot;,agent:&quot;js-agent.newrelic.com/nr-1044.min.js&quot;},b=w&amp;&amp;g&amp;&amp;g[l]&amp;&amp;!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l](&quot;DOMContentLoaded&quot;,i,!1),p[l](&quot;load&quot;,r,!1)):(d[m](&quot;onreadystatechange&quot;,o),p[m](&quot;onload&quot;,r)),f(&quot;mark&quot;,[&quot;firstbyte&quot;,u],null,&quot;api&quot;);var x=0,E=e(4)},{}]},{},[&quot;loader&quot;]);&lt;/script&gt;
+    &lt;title&gt;BlazeDemo Confirmation&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;BlazeMeter demo app&quot;&gt;
+    &lt;meta name=&quot;sage&quot; content=&quot;flights app&quot;&gt;
+
+    &lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;assets/bootstrap-table.js&quot;&gt;&lt;/script&gt;
+    &lt;link href=&quot;assets/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+    &lt;link href=&quot;assets/bootstrap-table.css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot;&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        body {
+            background: #f5f5f5);
+        }
+
+        .hero-unit {
+            background-color: #fff;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;navbar navbar-inverse&quot;&gt;
+        &lt;div class=&quot;navbar-inner&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+                &lt;a class=&quot;btn btn-navbar&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.nav-collapse&quot;&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;a class=&quot;brand&quot; href=&quot;index.php&quot;&gt;Travel The World&lt;/a&gt;
+                &lt;a class=&quot;brand&quot; href=&quot;home&quot;&gt;home&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;container hero-unit&quot;&gt;
+        &lt;h1&gt;Thank you for your purchase today!&lt;/h1&gt;
+        &lt;table class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+                &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                            &lt;tr&gt;
+                    &lt;td&gt;Id&lt;/td&gt;
+                    &lt;td&gt;1506985882826&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Status&lt;/td&gt;
+                    &lt;td&gt;PendingCapture&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Amount&lt;/td&gt;
+                    &lt;td&gt; USD&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Card Number&lt;/td&gt;
+                    &lt;td&gt;xxxxxxxxxxxx&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Expiration&lt;/td&gt;
+                    &lt;td&gt;11
+                        /2017&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Auth Code&lt;/td&gt;
+                    &lt;td&gt;888888&lt;/td&gt;
+                &lt;/tr&gt;
+                                    &lt;tr&gt;
+                &lt;td&gt;Date&lt;/td&gt;
+                &lt;td&gt;Mon, 02 Oct 2017 23:11:22 +0000&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;br/&gt;
+        &lt;pre&gt;
+{
+    &amp;quot;id&amp;quot;: &amp;quot;1506985882826&amp;quot;,
+    &amp;quot;status&amp;quot;: &amp;quot;PendingCapture&amp;quot;,
+    &amp;quot;amount&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;currency&amp;quot;: &amp;quot;USD&amp;quot;,
+    &amp;quot;authCode&amp;quot;: &amp;quot;888888&amp;quot;,
+    &amp;quot;payment&amp;quot;: {
+        &amp;quot;cardNumber&amp;quot;: &amp;quot;xxxxxxxxxxxx&amp;quot;,
+        &amp;quot;cardExpirationMonth&amp;quot;: &amp;quot;11&amp;quot;,
+        &amp;quot;cardExpirationYear&amp;quot;: &amp;quot;2017&amp;quot;
+    },
+    &amp;quot;_links&amp;quot;: {
+        &amp;quot;self&amp;quot;: {
+            &amp;quot;href&amp;quot;: &amp;quot;https=&amp;gt;\/\/sandbox.api.visa.com\/cybersource\/payments\/v1\/authorizations\/1506985882826&amp;quot;,
+            &amp;quot;method&amp;quot;: &amp;quot;GET&amp;quot;
+        },
+        &amp;quot;capture&amp;quot;: [
+            {
+                &amp;quot;href&amp;quot;: &amp;quot;https=&amp;gt;\/\/sandbox.api.visa.com\/cybersource\/payments\/v1\/authorizations\/1506985882826\/captures&amp;quot;,
+                &amp;quot;method&amp;quot;: &amp;quot;POST&amp;quot;
+            }
+        ],
+        &amp;quot;reversal&amp;quot;: [
+            {
+                &amp;quot;href&amp;quot;: &amp;quot;https=&amp;gt;\/\/sandbox.api.visa.com\/cybersource\/payments\/v1\/authorizations\/1506985882826\/reversals&amp;quot;,
+                &amp;quot;method&amp;quot;: &amp;quot;POST&amp;quot;
+            }
+        ]
+    }
+}
+&lt;/pre&gt;
+        &lt;br/&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;window.NREUM||(NREUM={});NREUM.info={&quot;beacon&quot;:&quot;bam.nr-data.net&quot;,&quot;licenseKey&quot;:&quot;338cffe5d3&quot;,&quot;applicationID&quot;:&quot;6657625&quot;,&quot;transactionName&quot;:&quot;YVxSYxACCxcEVRFfWlgWcVQWCgoKSlUKWFNfS11WFgoKCktGDUY=&quot;,&quot;queueTime&quot;:0,&quot;applicationTime&quot;:7,&quot;atts&quot;:&quot;TRtRFVgYGBk=&quot;,&quot;errorBeacon&quot;:&quot;bam.nr-data.net&quot;,&quot;agent&quot;:&quot;&quot;}&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;</responseData>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">creditCardYear=2017&amp;city=&amp;creditCardMonth=11&amp;_token=&amp;inputName=&amp;zipCode=&amp;state=&amp;address=&amp;creditCardNumber=&amp;nameOnCard=&amp;cardType=visa</queryString>
+  <java.net.URL>http://blazedemo.com/confirmation.php</java.net.URL>
+</httpSample>
+
+</testResults>

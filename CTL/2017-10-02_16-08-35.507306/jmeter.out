@@ -1,0 +1,7 @@
+Writing log file to: /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-02_16-08-35.507306/jmeter.log
+Created the tree successfully using /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-02_16-08-35.507306/modified_requests.jmx
+Starting the test @ Mon Oct 02 16:08:43 PDT 2017 (1506985723010)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+Command: Shutdown received from /127.0.0.1
+Tidying up ...    @ Mon Oct 02 16:11:22 PDT 2017 (1506985882816)
+... end of run
