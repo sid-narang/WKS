@@ -1,0 +1,33 @@
+---
+execution:
+- concurrency: 5
+  hold-for: 300s
+  iterations: 100
+  ramp-up: 60s
+  scenario: centurylink
+
+scenarios:
+  centurylink:
+    requests:
+      url: http://www.centurylink.com/index_a.html
+      url: http://www.centurylink.com/home/
+      url: http://www.centurylink.com/home/help.html
+      url: http://www.centurylink.com/home/help/contact.html
+
+    store-cache: true
+    store-cookie: true
+    use-dns-cache-mgr: false
+
+modules:
+  blazemeter:
+    test: CTL Taurus SLA
+    token: a968786f085e09e3e404    
+    
+reporting:
+- module: final_stats
+  dump-csv: aggregate.csv
+- module: junit-xml
+  filename: pass-fail.xml
+  data-source: pass-fail
+
+
