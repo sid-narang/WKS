@@ -347,3 +347,102 @@ Content-Type: application/json
   "Connections": "Connections", 
   "CPU": "CPU", 
   "Network I/O": "Network I
+[2017-10-03 11:02:55,574 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext-59d3cfcf5a462-0-c.monitoring.json"
+    ]
+}
+[2017-10-03 11:02:55,583 INFO Engine.blazemeter] Uploading all artifacts as artifacts.zip ...
+[2017-10-03 11:02:55,583 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-59d3cfcf5a462/files?signature=046efb337e820b864822c233d3987ef5 --===============8243427188124385756==
+Content-Disposition: file; name="file"; filename="artifacts.zip"
+Content-Type: application/zip
+
+PK    [XCKjÇj∫  €l     bzt.logÌ]{s€Fíˇ_U˘SºZÀ∫êx?∆J ñÂDâ$kC9Œû≠bÅ‡êÑzƒÒ}ˆÎ |Ä%m∂Í‰	Äò_˜t˜Ãt7zêä$õ
+[2017-10-03 11:02:56,541 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip"
+    ]
+}
+[2017-10-03 11:02:56,541 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-59d3cfcf5a462/files?signature=046efb337e820b864822c233d3987ef5 --===============7740125424037039576==
+Content-Disposition: file; name="file"; filename="artifacts.zip.tail.bz"
+Content-Type: application/x-bzip
+
+27K bzt.log
+3K ctl_sla.jmx.yml
+11K effective.json
+9K effective.yml
+48K error.jtl
+367  jmeter-bzt.propertie
+[2017-10-03 11:02:57,030 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip.tail.bz"
+    ]
+}
+[2017-10-03 11:02:57,030 INFO Engine.blazemeter] Uploading /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-03_10-58-31.902048/bzt.log
+[2017-10-03 11:02:57,030 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-59d3cfcf5a462/files?signature=046efb337e820b864822c233d3987ef5 --===============3149906855599216282==
+Content-Disposition: file; name="file"; filename="bzt.log"
+Content-Type: text/plain
+
+[2017-10-03 10:58:31,842 INFO root] Taurus CLI Tool v1.8.4.1401
+[2017-10-03 10:58:31,842 DEBUG root] Command-line options: {'ver
+[2017-10-03 11:02:57,773 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log"
+    ]
+}
+[2017-10-03 11:02:57,774 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/image/r-ext-59d3cfcf5a462/files?signature=046efb337e820b864822c233d3987ef5 --===============4254316158179035159==
+Content-Disposition: file; name="file"; filename="bzt.log.tail.bz"
+Content-Type: application/x-bzip
+
+[2017-10-03 11:02:53,580 INFO Engine.final_stats] Percentile 90.0%: 1.823
+[2017-10-03 11:02:53,580 INFO Engine.f
+[2017-10-03 11:02:58,301 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log.tail.bz"
+    ]
+}
+[2017-10-03 11:02:58,301 DEBUG Engine.blazemeter] Set last check time to: 1507053513.41
+[2017-10-03 11:02:58,301 INFO Engine.blazemeter] Ending data feeding...
+[2017-10-03 11:02:58,301 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-59d3cfcf5a462/stop None
+[2017-10-03 11:02:58,940 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": true
+}
+[2017-10-03 11:02:58,940 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/sessions/r-ext-59d3cfcf5a462 None
+[2017-10-03 11:02:59,470 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-59d3cfcf5a462",
+        "name": "CTL Taurus SLA",
+        "userId": 106819,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended": 15070537
+[2017-10-03 11:02:59,470 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/sessions/r-ext-59d3cfcf5a462 {
+ "note": "KeyboardInterrupt:"
+}
+[2017-10-03 11:02:59,937 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-59d3cfcf5a462",
+        "name": "CTL Taurus SLA",
+        "userId": 106819,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended": 15070537
+[2017-10-03 11:02:59,938 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/masters/16709043 None
