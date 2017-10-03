@@ -446,3 +446,34 @@ Content-Type: application/x-bzip
         "status": "ENDED",
         "ended": 15070537
 [2017-10-03 11:02:59,938 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/masters/16709043 None
+[2017-10-03 11:03:00,346 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 16709043,
+        "name": "CTL Taurus SLA",
+        "userId": 106819,
+        "ended": 1507053780,
+        "maxUsers": 10,
+        "created": 1507053519,
+        "updated": 1507053780
+[2017-10-03 11:03:00,346 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/masters/16709043 {
+ "note": "KeyboardInterrupt:"
+}
+[2017-10-03 11:03:00,823 DEBUG User] Response: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 16709043,
+        "name": "CTL Taurus SLA",
+        "userId": 106819,
+        "ended": 1507053780,
+        "maxUsers": 10,
+        "isSandbox": false,
+        "executorClientId": "Tau
+[2017-10-03 11:03:00,823 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/#/masters/16709043
+[2017-10-03 11:03:00,825 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-03_10-58-31.902048/effective.yml
+[2017-10-03 11:03:00,943 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-03_10-58-31.902048/effective.json
+[2017-10-03 11:03:01,013 INFO root] Artifacts dir: /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-03_10-58-31.902048
+[2017-10-03 11:03:01,014 WARNING root] Done performing with code: 1
+[2017-10-03 11:03:01,014 DEBUG root] Closing log handler: /Users/narsi01/Desktop/CTL_CI/CTL/2017-10-03_10-58-31.902048/bzt.log
