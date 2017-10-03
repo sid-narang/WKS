@@ -10,14 +10,25 @@
  }, 
  "reporting": [
   {
-   "module": "final-stats"
+   "dump-csv": null, 
+   "module": "final-stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
   }, 
   {
    "module": "console"
   }, 
   {
    "dump-csv": "aggregate.csv", 
-   "module": "final_stats"
+   "module": "final_stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
   }, 
   {
    "data-source": "pass-fail", 
@@ -26,10 +37,11 @@
   }, 
   {
    "session-id": null, 
-   "project": null, 
-   "test": "CTL Taurus SLA", 
+   "report-name": null, 
+   "forced-last-check": 1.51e+09, 
    "module": "blazemeter", 
-   "report-name": null
+   "project": null, 
+   "test": "CTL Taurus SLA"
   }
  ], 
  "modules": {
@@ -49,6 +61,7 @@
    "send-interval": 30, 
    "data-address": "https://data.blazemeter.com", 
    "send-custom-tables": false, 
+   "artifact-upload-size-limit": 10, 
    "report-name": null, 
    "monitoring-buffer-limit": 500, 
    "send-monitoring": true, 
