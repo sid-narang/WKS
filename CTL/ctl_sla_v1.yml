@@ -1,7 +1,7 @@
 ---
 execution:
 - concurrency: 5
-  hold-for: 300s
+  hold-for: 120s
   iterations: 100
   ramp-up: 60s
   scenario: centurylink
