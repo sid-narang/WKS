@@ -11,6 +11,7 @@ scenarios:
     requests:
       url: http://www.centurylink.com/index_a.html
       url: http://www.centurylink.com/home/
+      url: http://www.centurylink.com/home/help.html
       url: http://www.centurylink.com/home/help/contact.html
 
     store-cache: true
