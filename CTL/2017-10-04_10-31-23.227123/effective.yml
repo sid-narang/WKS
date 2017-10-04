@@ -58,6 +58,7 @@ modules:
     class: bzt.modules.services.AppiumLoader
   blazemeter:
     address: https://a.blazemeter.com
+    artifact-upload-size-limit: 10
     browser-open: start
     class: bzt.modules.blazemeter.BlazeMeterUploader
     data-address: https://data.blazemeter.com
@@ -149,6 +150,7 @@ modules:
       mode: Stripped
       summariser.name: ''
     shutdown-port: 4445
+    shutdown-wait: 5
     system-properties: {}
     version: '3.1'
     xml-jtl-flags: {}
@@ -181,6 +183,8 @@ modules:
     class: bzt.modules.selenium.SeleniumExecutor
   shellexec:
     class: bzt.modules.shellexec.ShellExecutor
+    env:
+      TAURUS_INDEX_ALL: ''
   siege:
     class: bzt.modules.siege.SiegeExecutor
   testng:
@@ -191,14 +195,26 @@ modules:
     class: bzt.modules.services.Unpacker
 provisioning: local
 reporting:
-- module: final-stats
+- dump-csv: null
+  dump-xml: null
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
 - module: console
 - dump-csv: aggregate.csv
+  dump-xml: null
+  failed-labels: false
   module: final_stats
+  percentiles: true
+  summary: true
+  test-duration: true
 - data-source: pass-fail
   filename: pass-fail.xml
   module: junit-xml
-- module: blazemeter
+- forced-last-check: 1507138284.982265
+  module: blazemeter
   project: null
   report-name: null
   session-id: null
@@ -375,6 +391,7 @@ settings:
   check-interval: 1
   check-updates: true
   default-executor: jmeter
+  hostaliases: {}
   proxy: {}
 version: 1.8.4.1401
 

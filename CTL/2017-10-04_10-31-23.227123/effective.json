@@ -5,18 +5,30 @@
   "aggregator": "consolidator", 
   "default-executor": "jmeter", 
   "proxy": {}, 
-  "artifacts-dir": "%Y-%m-%d_%H-%M-%S.%f"
+  "artifacts-dir": "%Y-%m-%d_%H-%M-%S.%f", 
+  "hostaliases": {}
  }, 
  "reporting": [
   {
-   "module": "final-stats"
+   "dump-csv": null, 
+   "module": "final-stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
   }, 
   {
    "module": "console"
   }, 
   {
    "dump-csv": "aggregate.csv", 
-   "module": "final_stats"
+   "module": "final_stats", 
+   "summary": true, 
+   "test-duration": true, 
+   "percentiles": true, 
+   "dump-xml": null, 
+   "failed-labels": false
   }, 
   {
    "data-source": "pass-fail", 
@@ -25,10 +37,11 @@
   }, 
   {
    "session-id": null, 
-   "project": null, 
-   "test": "CTL Taurus SLA", 
+   "report-name": null, 
+   "forced-last-check": 1.51e+09, 
    "module": "blazemeter", 
-   "report-name": null
+   "project": null, 
+   "test": "CTL Taurus SLA"
   }
  ], 
  "modules": {
@@ -48,6 +61,7 @@
    "send-interval": 30, 
    "data-address": "https://data.blazemeter.com", 
    "send-custom-tables": false, 
+   "artifact-upload-size-limit": 10, 
    "report-name": null, 
    "monitoring-buffer-limit": 500, 
    "send-monitoring": true, 
@@ -118,7 +132,10 @@
    }
   }, 
   "shellexec": {
-   "class": "bzt.modules.shellexec.ShellExecutor"
+   "class": "bzt.modules.shellexec.ShellExecutor", 
+   "env": {
+    "TAURUS_INDEX_ALL": ""
+   }
   }, 
   "siege": {
    "class": "bzt.modules.siege.SiegeExecutor"
@@ -143,6 +160,13 @@
   "jmeter": {
    "version": "3.1", 
    "gui": false, 
+   "properties": {
+    "jmeter.save.saveservice.autoflush": "true", 
+    "summariser.name": "", 
+    "jmeter.save.saveservice.connect_time": "true", 
+    "mode": "Stripped", 
+    "jmeterengine.force.system.exit": "true"
+   }, 
    "class": "bzt.modules.jmeter.JMeterExecutor", 
    "system-properties": {}, 
    "memory-xmx": null, 
@@ -160,13 +184,7 @@
    ], 
    "xml-jtl-flags": {}, 
    "path": "/Users/narsi01/.bzt/jmeter-taurus/bin/jmeter.sh", 
-   "properties": {
-    "jmeter.save.saveservice.autoflush": "true", 
-    "summariser.name": "", 
-    "jmeter.save.saveservice.connect_time": "true", 
-    "mode": "Stripped", 
-    "jmeterengine.force.system.exit": "true"
-   }, 
+   "shutdown-wait": 5, 
    "shutdown-port": 4445
   }, 
   "local": {
