@@ -19,5 +19,5 @@ services:
 execution:
   scenario: simple
   hold-for: 13m
-  concurrency: 125
+  concurrency: 100
   ramp-up: 80s
