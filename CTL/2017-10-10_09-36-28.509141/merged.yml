@@ -1,0 +1,22 @@
+---
+execution:
+  concurrency: 125
+  hold-for: 13m
+  ramp-up: 80s
+  scenario: simple
+modules:
+  blazemeter:
+    test: Taurus1 Demo
+    token: '********'
+scenarios:
+  simple:
+    requests:
+    - label: HomePage
+      url: http://blazedemo.com/
+    - label: VacationPage
+      url: http://blazedemo.com/vacation.html
+services:
+- criteria:
+  - avg-rt of HomePage>7500ms for 10s, continue as failed
+  module: passfail
+

@@ -1,0 +1,36 @@
+{
+ "scenarios": {
+  "simple": {
+   "requests": [
+    {
+     "url": "http://blazedemo.com/", 
+     "label": "HomePage"
+    }, 
+    {
+     "url": "http://blazedemo.com/vacation.html", 
+     "label": "VacationPage"
+    }
+   ]
+  }
+ }, 
+ "services": [
+  {
+   "module": "passfail", 
+   "criteria": [
+    "avg-rt of HomePage>7500ms for 10s, continue as failed"
+   ]
+  }
+ ], 
+ "execution": {
+  "ramp-up": "80s", 
+  "hold-for": "13m", 
+  "concurrency": 125, 
+  "scenario": "simple"
+ }, 
+ "modules": {
+  "blazemeter": {
+   "test": "Taurus1 Demo", 
+   "token": "********"
+  }
+ }
+}
