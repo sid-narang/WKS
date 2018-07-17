@@ -1,7 +1,7 @@
 ---
 modules:
   blazemeter:
-    test: Taurus1 Demo
+    test: CICD Taurus SLA
 
 scenarios:
   simple:
