@@ -5,7 +5,7 @@ modules:
 
 execution:
   scenario: Taurus_Sn
-  concurrency: 50
+  concurrency: 100
   ramp-up: 1m
   hold-for: 5m
 
