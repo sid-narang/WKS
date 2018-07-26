@@ -6,7 +6,7 @@ modules:
 execution:
   scenario: simple
   hold-for: 5m
-  concurrency: 120
+  concurrency: 60
   ramp-up: 80s
   
 scenarios:
