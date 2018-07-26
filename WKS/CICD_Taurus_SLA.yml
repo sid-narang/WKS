@@ -1,17 +1,17 @@
 ---
 modules:
   blazemeter:
-    test: CTL Taurus SLA
-    token: a968786f085e09e3e404
+    test: CICD Taurus SLA
 
 execution:
-- concurrency: 10
+- concurrency: 100
   hold-for: 300s
   iterations: 1000
   ramp-up: 60s
-  scenario: Thread Group
+  scenario: blazedemo
+
 scenarios:
-  Thread Group:
+  blazedemo:
     requests:
     - follow-redirects: true
       headers:
@@ -92,6 +92,9 @@ scenarios:
     use-dns-cache-mgr: false
     
 reporting:
+- module: passfail
+  criteria:
+  - avg-rt>350ms for 5s, stop as failed
 - module: final_stats
   dump-csv: aggregate.csv
 - module: junit-xml

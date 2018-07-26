@@ -1,2 +1,4 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite name="bzt_pass_fail" package="bzt"/>
+<testsuites>
+  <testsuite name="bzt_pass_fail" package_name="bzt"/>
+</testsuites>
