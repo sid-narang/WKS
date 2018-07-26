@@ -3,6 +3,12 @@ modules:
   blazemeter:
     test: CICD Taurus SLA
 
+execution:
+  scenario: simple
+  hold-for: 5m
+  concurrency: 120
+  ramp-up: 80s
+  
 scenarios:
   simple:
     requests:
@@ -15,9 +21,3 @@ services:
 - module: passfail
   criteria:
   - avg-rt of HomePage>750ms for 10s, continue as failed
-
-execution:
-  scenario: simple
-  hold-for: 13m
-  concurrency: 150
-  ramp-up: 80s
