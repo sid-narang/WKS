@@ -1,4 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="bzt_pass_fail" package_name="bzt"/>
+  <testsuite name="bzt_pass_fail" package_name="bzt">
+    <testcase classname="https://a.blazemeter.com/app/#/masters/17996788" name="avg-rt of &gt;350ms for 5s">
+      <system-out>BlazeMeter report link: https://a.blazemeter.com/app/#/masters/17996788
+</system-out>
+      <error message="Failed: avg-rt&gt;350ms for 11 sec" type="pass/fail criteria triggered"/>
+    </testcase>
+  </testsuite>
 </testsuites>
