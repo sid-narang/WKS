@@ -518,3 +518,171 @@ execution:
 [2018-07-27 09:22:39,413 INFO Engine.console] Waiting for finish...
 [2018-07-27 09:22:54,099 INFO Engine.cloud] Cloud test status: TAURUS_ENGINE_READY
 [2018-07-27 09:23:09,253 INFO Engine.cloud] Cloud test status: DATA_RECEIVED
+[2018-07-27 09:25:38,076 WARNING root] Alert: avg-rt>350ms for 5 sec
+[2018-07-27 09:25:38,105 INFO root] Pass/Fail criterion triggered shutdown: Failed: avg-rt>350ms for 5 sec
+[2018-07-27 09:25:38,114 WARNING Engine] Please wait for graceful shutdown...
+[2018-07-27 09:25:38,122 DEBUG root] Leveled up log file verbosity
+[2018-07-27 09:25:38,122 INFO Engine] Shutting down...
+[2018-07-27 09:25:38,129 DEBUG Engine] Current stop reason: Failed: avg-rt>350ms for 5 sec
+[2018-07-27 09:25:38,130 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10c5b6550>]/{<logging.StreamHandler object at 0x10c5b6550>: <open file '<stdout>', mode 'w' at 0x10ad42150>}
+[2018-07-27 09:25:38,132 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558/effective.yml
+[2018-07-27 09:25:38,170 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558/effective.json
+[2018-07-27 09:25:38,172 WARNING root] Automated shutdown
+[2018-07-27 09:25:38,172 DEBUG root] AutomatedShutdown: Failed: avg-rt>350ms for 5 sec
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/cli.py", line 254, in perform
+    self.engine.run()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 224, in run
+    reraise(exc_info)
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 206, in run
+    self._wait()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 245, in _wait
+    while not self._check_modules_list():
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 232, in _check_modules_list
+    finished = bool(module.check())
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.py", line 98, in check
+    res = res or crit.check()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.py", line 204, in check
+    raise AutomatedShutdown("%s" % self)
+AutomatedShutdown: Failed: avg-rt>350ms for 5 sec
+[2018-07-27 09:25:38,173 INFO Engine] Post-processing...
+[2018-07-27 09:25:38,173 INFO Engine.cloud.ProjectFinder.CloudTaurusTest] Ending cloud test...
+[2018-07-27 09:25:38,173 DEBUG Engine.cloud] Request: POST https://a.blazemeter.com/api/v4/masters/18000541/stop None
+[2018-07-27 09:25:38,173 DEBUG HTTPClient] Making HTTP request POST https://a.blazemeter.com/api/v4/masters/18000541/stop
+[2018-07-27 09:25:38,413 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/masters/18000541/stop HTTP/1.1" 202 570
+[2018-07-27 09:25:38,414 DEBUG Engine.cloud] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "session_id": "r-v4-5b5b46cdb8b56",
+            "result": "Stopped"
+        },
+        {
+            "session_id": "r-v4-5b5b46cdbb610",
+            "result": "Stopped"
+      
+[2018-07-27 09:25:38,414 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/18000541/full None
+[2018-07-27 09:25:38,414 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/18000541/full
+[2018-07-27 09:25:38,649 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/18000541/full HTTP/1.1" 200 None
+[2018-07-27 09:25:38,676 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 18000541,
+        "name": "CICD Taurus SLA",
+        "userId": 106819,
+        "runnerUserId": 106819,
+        "created": 1532708557,
+        "updated": 1532708557,
+        "parallelT
+[2018-07-27 09:25:38,677 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/labels?master_id=18000541 None
+[2018-07-27 09:25:38,677 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/labels?master_id=18000541
+[2018-07-27 09:25:38,901 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/labels?master_id=18000541 HTTP/1.1" 200 1840
+[2018-07-27 09:25:38,902 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": "ALL",
+            "name": "ALL",
+            "sessions": [
+                "r-v4-5b5b46cdb8b56",
+                "r-v4-5b5b46cdbb610",
+                "r-v4-5b5b46cdbd1
+[2018-07-27 09:25:38,902 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1532708732&master_ids%5B%5D=18000541&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL&labels%5B%5D=c12153d8b98ab22581e171d0a414b685&labels%5B%5D=527285e5e69573ac3e926207e867bc32&labels%5B%5D=8c3cde8057be5d2ee12453ce651e04da&labels%5B%5D=b71318970259e155ebbff992e1d9a9a2 None
+[2018-07-27 09:25:38,902 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/data/kpis?interval=1&from=1532708732&master_ids%5B%5D=18000541&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL&labels%5B%5D=c12153d8b98ab22581e171d0a414b685&labels%5B%5D=527285e5e69573ac3e926207e867bc32&labels%5B%5D=8c3cde8057be5d2ee12453ce651e04da&labels%5B%5D=b71318970259e155ebbff992e1d9a9a2
+[2018-07-27 09:25:39,182 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/data/kpis?interval=1&from=1532708732&master_ids%5B%5D=18000541&kpis%5B%5D=t&kpis%5B%5D=lt&kpis%5B%5D=by&kpis%5B%5D=n&kpis%5B%5D=ec&kpis%5B%5D=ts&kpis%5B%5D=na&labels%5B%5D=ALL&labels%5B%5D=c12153d8b98ab22581e171d0a414b685&labels%5B%5D=527285e5e69573ac3e926207e867bc32&labels%5B%5D=8c3cde8057be5d2ee12453ce651e04da&labels%5B%5D=b71318970259e155ebbff992e1d9a9a2 HTTP/1.1" 200 2964
+[2018-07-27 09:25:39,183 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "labelId": "527285e5e69573ac3e926207e867bc32",
+            "labelName": "http://www.centurylink.com/home/help.html",
+            "label": "http://www.centurylink.com/home/help
+[2018-07-27 09:25:39,183 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/18000541/reports/aggregatereport/data None
+[2018-07-27 09:25:39,184 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/18000541/reports/aggregatereport/data
+[2018-07-27 09:25:39,392 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/18000541/reports/aggregatereport/data HTTP/1.1" 200 3670
+[2018-07-27 09:25:39,392 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "labelId": "ALL",
+            "labelName": "ALL",
+            "samples": 33673,
+            "avgResponseTime": 261.98,
+            "90line": 361.44,
+            "95line": 417.
+[2018-07-27 09:25:39,393 DEBUG Engine.cloud] Request: GET https://a.blazemeter.com/api/v4/masters/18000541/reports/errorsreport/data?noDataError=false None
+[2018-07-27 09:25:39,393 DEBUG HTTPClient] Making HTTP request GET https://a.blazemeter.com/api/v4/masters/18000541/reports/errorsreport/data?noDataError=false
+[2018-07-27 09:25:39,621 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/18000541/reports/errorsreport/data?noDataError=false HTTP/1.1" 200 61
+[2018-07-27 09:25:39,622 DEBUG Engine.cloud] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": []
+}
+[2018-07-27 09:25:39,624 DEBUG Engine.consolidator] Consolidator buffer[3]: [1532708730, 1532708731, 1532708732]
+[2018-07-27 09:25:39,624 DEBUG Engine.consolidator] Merging into 1532708730
+[2018-07-27 09:25:39,624 DEBUG Engine.consolidator] Merging 1532708730
+[2018-07-27 09:25:39,628 DEBUG root] 1532708730 Failed: avg-rt>350ms for -9223372036854775806 sec: False
+[2018-07-27 09:25:39,628 DEBUG Engine.consolidator] Processed datapoint: 1532708730/None
+[2018-07-27 09:25:39,628 DEBUG Engine.consolidator] Merging into 1532708731
+[2018-07-27 09:25:39,628 DEBUG Engine.consolidator] Merging 1532708731
+[2018-07-27 09:25:39,632 DEBUG root] 1532708731 Failed: avg-rt>350ms for -9223372036854775806 sec: False
+[2018-07-27 09:25:39,632 DEBUG Engine.consolidator] Processed datapoint: 1532708731/None
+[2018-07-27 09:25:39,632 DEBUG Engine.consolidator] Merging into 1532708732
+[2018-07-27 09:25:39,632 DEBUG Engine.consolidator] Merging 1532708732
+[2018-07-27 09:25:39,635 DEBUG root] 1532708732 Failed: avg-rt>350ms for -9223372036854775806 sec: False
+[2018-07-27 09:25:39,636 DEBUG Engine.consolidator] Processed datapoint: 1532708732/None
+[2018-07-27 09:25:39,636 INFO Engine.final-stats] Test duration: 0:03:04
+[2018-07-27 09:25:39,636 INFO Engine.final-stats] Samples count: 11799, 0.00% failures
+[2018-07-27 09:25:39,636 INFO Engine.final-stats] Average times: total 0.269, latency 0.097, connect 0.000
+[2018-07-27 09:25:39,639 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B          90.0 (0x(B        0.3645 (0x(B
+(0x(B          95.0 (0x(B        0.4535 (0x(B
+(0x(B          99.0 (0x(B       0.64791 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2018-07-27 09:25:39,642 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                                             (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B http://www.centurylink.com/home/                  (0x(B   OK   (0x(B 100.00% (0x(B  0.244 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/home/help.html         (0x(B   OK   (0x(B 100.00% (0x(B  0.237 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/home/help/contact.html (0x(B   OK   (0x(B 100.00% (0x(B  0.225 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/index_a.html           (0x(B   OK   (0x(B 100.00% (0x(B  0.371 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2018-07-27 09:25:39,642 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-07-27 09:25:39,642 INFO Engine.final_stats] Test duration: 0:03:04
+[2018-07-27 09:25:39,642 INFO Engine.final_stats] Samples count: 11799, 0.00% failures
+[2018-07-27 09:25:39,642 INFO Engine.final_stats] Average times: total 0.269, latency 0.097, connect 0.000
+[2018-07-27 09:25:39,643 INFO Engine.final_stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B          90.0 (0x(B        0.3645 (0x(B
+(0x(B          95.0 (0x(B        0.4535 (0x(B
+(0x(B          99.0 (0x(B       0.64791 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2018-07-27 09:25:39,644 INFO Engine.final_stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                                             (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B http://www.centurylink.com/home/                  (0x(B   OK   (0x(B 100.00% (0x(B  0.244 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/home/help.html         (0x(B   OK   (0x(B 100.00% (0x(B  0.237 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/home/help/contact.html (0x(B   OK   (0x(B 100.00% (0x(B  0.225 (0x(B       (0x(B
+(0x(B http://www.centurylink.com/index_a.html           (0x(B   OK   (0x(B 100.00% (0x(B  0.371 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2018-07-27 09:25:39,644 INFO Engine.final_stats] Dumping final status as CSV: aggregate.csv
+[2018-07-27 09:25:39,648 DEBUG Engine.junit-xml] Processing passfail objects: [<bzt.modules.passfail.PassFailStatus object at 0x10deb5a90>]
+[2018-07-27 09:25:39,649 WARNING Engine.XUnitFileWriter] File pass-fail.xml already exists, it will be overwritten
+[2018-07-27 09:25:39,649 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: pass-fail.xml
+[2018-07-27 09:25:39,653 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558/effective.yml
+[2018-07-27 09:25:39,689 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558/effective.json
+[2018-07-27 09:25:39,690 INFO root] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558
+[2018-07-27 09:25:39,690 WARNING root] Done performing with code: 3
+[2018-07-27 09:25:39,690 DEBUG root] Closing log handler: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-22-26.236558/bzt.log

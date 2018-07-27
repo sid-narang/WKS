@@ -2,8 +2,9 @@
 <testsuites>
   <testsuite name="bzt_pass_fail" package_name="bzt">
     <testcase classname="CICD Taurus SLA" name="avg-rt of &gt;350ms for 5s">
-      <system-out>BlazeMeter report link: https://a.blazemeter.com/app/#/masters/18000507
+      <system-out>BlazeMeter report link: https://a.blazemeter.com/app/#/masters/18000541
 </system-out>
+      <error message="Failed: avg-rt&gt;350ms for -9223372036854775806 sec" type="pass/fail criteria triggered"/>
     </testcase>
   </testsuite>
 </testsuites>

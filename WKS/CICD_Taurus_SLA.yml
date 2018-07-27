@@ -4,7 +4,7 @@ modules:
     test: CICD Taurus SLA
   
 execution:
-- concurrency: 100
+- concurrency: 125
   hold-for: 300s
   iterations: 1000
   ramp-up: 60s
@@ -62,17 +62,9 @@ scenarios:
       method: POST
       url: http://blazedemo.com/purchase.php
     - body:
-        _token: ''
-        address: ''
         cardType: visa
-        city: ''
         creditCardMonth: '11'
-        creditCardNumber: ''
         creditCardYear: '2017'
-        inputName: ''
-        nameOnCard: ''
-        state: ''
-        zipCode: ''
       follow-redirects: true
       headers:
         Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
