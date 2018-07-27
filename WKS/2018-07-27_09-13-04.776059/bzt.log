@@ -1,0 +1,62 @@
+[2018-07-27 09:13:04,723 INFO root] Taurus CLI Tool v1.12.1
+[2018-07-27 09:13:04,723 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_REKNTJ.log', 'option': None, 'aliases': []}
+[2018-07-27 09:13:04,723 DEBUG root] Python: CPython 2.7.15
+[2018-07-27 09:13:04,723 DEBUG root] OS: ('Darwin', 'narsi01mac1752', '17.6.0', 'Darwin Kernel Version 17.6.0: Tue May  8 15:22:16 PDT 2018; root:xnu-4570.61.1~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-07-27 09:13:04,724 INFO root] Starting with configs: ['test.yml']
+[2018-07-27 09:13:04,724 DEBUG root] Using personal config: /Users/narsi01/.bzt-rc
+[2018-07-27 09:13:04,724 INFO Engine] Configuring...
+[2018-07-27 09:13:04,724 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.12.1/libexec/bin/../etc/bzt.d
+[2018-07-27 09:13:04,724 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-07-27 09:13:04,724 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-07-27 09:13:04,724 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-07-27 09:13:04,751 DEBUG Engine] User configs list: ['/Users/narsi01/.bzt-rc', 'test.yml']
+[2018-07-27 09:13:04,751 DEBUG Engine.Configuration] Configs: ['/Users/narsi01/.bzt-rc', 'test.yml']
+[2018-07-27 09:13:04,752 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc as YAML
+[2018-07-27 09:13:04,755 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2018-07-27 09:13:04,760 DEBUG Engine.Configuration] Configs: ['/Users/narsi01/.bzt-rc', 'test.yml']
+[2018-07-27 09:13:04,760 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc as YAML
+[2018-07-27 09:13:04,761 DEBUG Engine.Configuration] Reading test.yml as YAML
+[2018-07-27 09:13:04,775 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.12.1&installID=macos-784f437f78c0
+[2018-07-27 09:13:04,776 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.12.1&installID=macos-784f437f78c0
+[2018-07-27 09:13:04,777 INFO Engine] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059
+[2018-07-27 09:13:04,781 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/effective
+[2018-07-27 09:13:04,785 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2018-07-27 09:13:04,785 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/effective.yml
+[2018-07-27 09:13:04,821 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/effective.json
+[2018-07-27 09:13:04,823 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/merged.yml
+[2018-07-27 09:13:04,823 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/merged.yml
+[2018-07-27 09:13:04,826 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/merged.json
+[2018-07-27 09:13:04,826 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/merged.json
+[2018-07-27 09:13:04,827 DEBUG Engine] Add existing artifact (move=False): test.yml
+[2018-07-27 09:13:04,827 DEBUG Engine] Copying test.yml to /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/test.yml
+[2018-07-27 09:13:04,827 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-07-27 09:13:04,828 DEBUG root] Closing log handler: /var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_REKNTJ.log
+[2018-07-27 09:13:04,853 DEBUG root] Switched writing logs to /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/bzt.log
+[2018-07-27 09:13:04,853 DEBUG root] Linting config
+[2018-07-27 09:13:04,856 INFO Engine] Preparing...
+[2018-07-27 09:13:04,857 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-07-27 09:13:04,857 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-07-27 09:13:05,002 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-07-27 09:13:05,003 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-07-27 09:13:05,003 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': u'bzt.modules.monitoring.Monitoring'})
+[2018-07-27 09:13:05,003 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-07-27 09:13:05,005 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-07-27 09:13:05,005 DEBUG Engine] Module config: passfail defaultdict(None, {'class': u'bzt.modules.passfail.PassFailStatus'})
+[2018-07-27 09:13:05,005 DEBUG root] Importing module: bzt.modules.passfail
+[2018-07-27 09:13:05,005 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-07-27 09:13:05,006 ERROR root] AssertionError: 
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/cli.py", line 253, in perform
+    self.engine.prepare()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 170, in prepare
+    self.__prepare_services()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 553, in __prepare_services
+    assert isinstance(instance, Service)
+AssertionError
+[2018-07-27 09:13:05,006 INFO Engine] Post-processing...
+[2018-07-27 09:13:05,006 DEBUG Engine.consolidator] Consolidator buffer[0]: []
+[2018-07-27 09:13:05,008 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/effective.yml
+[2018-07-27 09:13:05,033 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/effective.json
+[2018-07-27 09:13:05,034 INFO root] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059
+[2018-07-27 09:13:05,034 WARNING root] Done performing with code: 1
+[2018-07-27 09:13:05,034 DEBUG root] Closing log handler: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-07-27_09-13-04.776059/bzt.log

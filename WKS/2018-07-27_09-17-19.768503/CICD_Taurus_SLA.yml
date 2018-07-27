@@ -2,7 +2,9 @@
 modules:
   blazemeter:
     test: CICD Taurus SLA
-  
+  cloud:
+    token: dd501be847d94bdcf4c2c5a9:91d80d36273ed1689d604dd39ecaee399d5f85a406589879edc079f91dcf23522dda2ae1
+    
 execution:
 - concurrency: 100
   hold-for: 300s

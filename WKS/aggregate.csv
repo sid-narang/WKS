@@ -1,6 +1,6 @@
-label,avg_ct,avg_lt,avg_rt,bytes,concurrency,fail,stdev_rt,succ,throughput,perc_0.0,perc_50.0,perc_90.0,perc_95.0,perc_99.0,perc_99.9,perc_100.0,rc_200
-,0.02014,0.17692,0.61463,12233698,9,0,0,155,155,0.18400,0.51500,1.00000,1.16800,1.19600,1.61900,1.61900,155
-http://www.centurylink.com/home/help/contact.html,0,0.17812,0.51355,310866,5,0,0,33,33,0.49800,0.51500,0.52500,0.53100,0.53900,0.53900,0.53900,33
-http://www.centurylink.com/home/help.html,0,0.17754,0.39640,363682,8,0,0,35,35,0.33800,0.35000,0.51400,0.51700,0.53200,0.53200,0.53200,35
-http://www.centurylink.com/index_a.html,0.06643,0.17591,0.94287,11118510,2,0,0,47,47,0.68600,0.85800,1.18000,1.19600,1.61900,1.61900,1.61900,47
-http://www.centurylink.com/home/,0,0.17658,0.50330,440640,9,0,0,40,40,0.18400,0.50900,0.52000,0.52700,0.52900,0.52900,0.52900,40
+label,avg_ct,avg_lt,avg_rt,bytes,concurrency,fail,stdev_rt,succ,throughput,perc_90.0,perc_95.0,perc_99.0
+,0,0.09641,0.26544,0,20,0,0,4509,4509,0.38984,0.44935,0.62465
+http://www.centurylink.com/home/help/contact.html,0,0.09858,0.23072,0,20,0,0,1062,1062,0.23686,0.27266,0.27400
+http://www.centurylink.com/home/help.html,0,0.09644,0.22914,0,20,0,0,1117,1117,0.27535,0.27570,0.27700
+http://www.centurylink.com/index_a.html,0,0.09527,0.37387,0,20,0,0,1140,1140,0.56438,0.62466,0.82061
+http://www.centurylink.com/home/,0,0.09507,0.22748,0,20,0,0,1135,1135,0.27882,0.28017,0.28676
