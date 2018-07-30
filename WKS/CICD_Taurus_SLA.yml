@@ -4,7 +4,7 @@ modules:
     test: CICD Taurus SLA
   
 execution:
-- concurrency: 125
+- concurrency: 75
   hold-for: 300s
   iterations: 1000
   ramp-up: 60s
