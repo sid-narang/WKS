@@ -21,7 +21,7 @@ scenarios:
         Upgrade-Insecure-Requests: '1'
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      label: http://www.centurylink.com/index_a.html
+      label: http://www.blazedemo.com/index_a.html
       method: GET
       url: http://blazedemo.com/
     - body:
@@ -38,7 +38,7 @@ scenarios:
         Upgrade-Insecure-Requests: '1'
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      label: http://www.centurylink.com/home/
+      label: http://www.blazedemo.com/home/
       method: POST
       url: http://blazedemo.com/reserve.php
     - body:
@@ -58,7 +58,7 @@ scenarios:
         Upgrade-Insecure-Requests: '1'
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      label: http://www.centurylink.com/home/help.html
+      label: http://www.blazedemo.com/home/help.html
       method: POST
       url: http://blazedemo.com/purchase.php
     - body:
@@ -76,7 +76,7 @@ scenarios:
         Upgrade-Insecure-Requests: '1'
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
           (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-      label: http://www.centurylink.com/home/help/contact.html
+      label: http://www.blazedemo.com/home/help/contact.html
       method: POST
       url: http://blazedemo.com/confirmation.php
     store-cache: true
