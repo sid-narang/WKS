@@ -1,4 +1,0 @@
-timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
-1532708003636,1518,http://www.centurylink.com/index_a.html,200,OK,blazedemo 1-1,true,236564,3,3,522,narsi01mac1752,306
-1532708004175,1272,http://www.centurylink.com/index_a.html,200,OK,blazedemo 1-2,true,236564,2,2,362,narsi01mac1752,176
-1532708004777,1393,http://www.centurylink.com/index_a.html,200,OK,blazedemo 1-3,true,236564,1,1,471,narsi01mac1752,283
