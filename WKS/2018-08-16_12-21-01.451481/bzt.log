@@ -1,0 +1,298 @@
+[2018-08-16 12:21:01,361 INFO root] Taurus CLI Tool v1.12.1
+[2018-08-16 12:21:01,361 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_7ffE7B.log', 'option': None, 'aliases': []}
+[2018-08-16 12:21:01,362 DEBUG root] Python: CPython 2.7.15
+[2018-08-16 12:21:01,362 DEBUG root] OS: ('Darwin', 'narsi01mac1752', '17.6.0', 'Darwin Kernel Version 17.6.0: Tue May  8 15:22:16 PDT 2018; root:xnu-4570.61.1~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-08-16 12:21:01,362 INFO root] Starting with configs: ['CICD_Taurus_SLA.yml']
+[2018-08-16 12:21:01,362 DEBUG root] Using personal config: /Users/narsi01/.bzt-rc
+[2018-08-16 12:21:01,362 INFO Engine] Configuring...
+[2018-08-16 12:21:01,363 DEBUG Engine] No machine configs dir: /usr/local/Cellar/bzt/1.12.1/libexec/bin/../etc/bzt.d
+[2018-08-16 12:21:01,363 DEBUG Engine] Base configs list: ['/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-16 12:21:01,363 DEBUG Engine.Configuration] Configs: ['/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml']
+[2018-08-16 12:21:01,379 DEBUG Engine.Configuration] Reading /usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-08-16 12:21:01,405 DEBUG Engine] User configs list: ['/Users/narsi01/.bzt-rc', 'CICD_Taurus_SLA.yml']
+[2018-08-16 12:21:01,405 DEBUG Engine.Configuration] Configs: ['/Users/narsi01/.bzt-rc', 'CICD_Taurus_SLA.yml']
+[2018-08-16 12:21:01,408 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc as YAML
+[2018-08-16 12:21:01,410 DEBUG Engine.Configuration] Reading CICD_Taurus_SLA.yml as YAML
+[2018-08-16 12:21:01,425 DEBUG Engine.Configuration] Configs: ['/Users/narsi01/.bzt-rc', 'CICD_Taurus_SLA.yml']
+[2018-08-16 12:21:01,425 DEBUG Engine.Configuration] Reading /Users/narsi01/.bzt-rc as YAML
+[2018-08-16 12:21:01,426 DEBUG Engine.Configuration] Reading CICD_Taurus_SLA.yml as YAML
+[2018-08-16 12:21:01,451 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.12.1&installID=macos-784f437f78c0
+[2018-08-16 12:21:01,451 DEBUG HTTPClient] Making HTTP request GET http://gettaurus.org/updates/?version=1.12.1&installID=macos-784f437f78c0
+[2018-08-16 12:21:01,451 INFO Engine] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481
+[2018-08-16 12:21:01,483 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective
+[2018-08-16 12:21:01,485 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.yml
+[2018-08-16 12:21:01,513 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.json
+[2018-08-16 12:21:01,514 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/merged.yml
+[2018-08-16 12:21:01,515 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/merged.yml
+[2018-08-16 12:21:01,527 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/merged.json
+[2018-08-16 12:21:01,528 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/merged.json
+[2018-08-16 12:21:01,529 DEBUG Engine] Add existing artifact (move=False): CICD_Taurus_SLA.yml
+[2018-08-16 12:21:01,529 DEBUG Engine] Copying CICD_Taurus_SLA.yml to /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/CICD_Taurus_SLA.yml
+[2018-08-16 12:21:01,530 DEBUG Engine.Environment] Replace 'TAURUS_ARTIFACTS_DIR' in environment
+[2018-08-16 12:21:01,531 DEBUG root] Closing log handler: /var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/bzt_7ffE7B.log
+[2018-08-16 12:21:01,556 DEBUG root] Switched writing logs to /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/bzt.log
+[2018-08-16 12:21:01,556 DEBUG root] Linting config
+[2018-08-16 12:21:01,564 INFO Engine] Preparing...
+[2018-08-16 12:21:01,564 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': u'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-08-16 12:21:01,565 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-08-16 12:21:02,274 DEBUG urllib3.connectionpool] Starting new HTTP connection (1): gettaurus.org:80
+[2018-08-16 12:21:04,744 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-08-16 12:21:04,744 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-08-16 12:21:04,744 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': u'bzt.modules.monitoring.Monitoring'})
+[2018-08-16 12:21:04,744 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-08-16 12:21:04,807 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-08-16 12:21:04,815 DEBUG Engine] Module config: local defaultdict(None, {'class': u'bzt.modules.provisioning.Local'})
+[2018-08-16 12:21:04,815 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-08-16 12:21:04,815 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-08-16 12:21:04,815 DEBUG Engine] Module config: jmeter defaultdict(None, {'class': u'bzt.modules.jmeter.JMeterExecutor', 'protocol-handlers': defaultdict(None, {'http': u'bzt.jmx.http.HTTPProtocolHandler'}), 'properties': defaultdict(None, {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true'}), 'plugins': [u'jpgc-casutg', u'jpgc-dummy', u'jpgc-ffw', u'jpgc-fifo', u'jpgc-functions', u'jpgc-json', u'jpgc-perfmon', u'jpgc-prmctl', u'jpgc-tst']})
+[2018-08-16 12:21:04,815 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-08-16 12:21:05,063 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-08-16 12:21:05,063 DEBUG Engine.local] Preparing executor: None/4407465296
+[2018-08-16 12:21:05,064 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter.log
+[2018-08-16 12:21:05,064 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-08-16 12:21:05,065 DEBUG Engine.jmeter] Port 4445 is free
+[2018-08-16 12:21:05,065 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-08-16 12:21:05,065 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-08-16 12:21:05,423 DEBUG urllib3.connectionpool] http://gettaurus.org:80 "GET /updates/?version=1.12.1&installID=macos-784f437f78c0 HTTP/1.1" 200 60
+[2018-08-16 12:21:05,424 DEBUG Engine] Taurus updates info: {u'needsUpgrade': False, u'latest': u'1.12.1'}
+[2018-08-16 12:21:05,425 DEBUG Engine] Installation is up-to-date
+[2018-08-16 12:21:05,527 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_121"
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
+[2018-08-16 12:21:05,528 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-08-16 12:21:05,529 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/narsi01/.bzt/jmeter-taurus/4.0/bin/jmeter.sh
+[2018-08-16 12:21:05,529 DEBUG bzt.utils] Executing shell: ['/Users/narsi01/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-j', '/var/folders/t5/kg41spf56pz146ff1j739w358p9wh7/T/jmeter2_nwCVlog', '--version'] at .
+[2018-08-16 12:21:08,446 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 4.0 r1823414  
+
+Copyright (c) 1999-2018 The Apache Software Foundation
+
+ / None
+[2018-08-16 12:21:08,447 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/requests.jmx
+[2018-08-16 12:21:08,449 DEBUG root] Importing module: bzt.jmx.http
+[2018-08-16 12:21:08,486 DEBUG root] Loading class: 'HTTPProtocolHandler' from <module 'bzt.jmx.http' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/jmx/http.pyc'>
+[2018-08-16 12:21:08,489 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/requests.jmx
+[2018-08-16 12:21:08,490 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=150, throughput=None, ramp_up=60.0, hold=300.0, iterations=1000, duration=360.0, steps=None)
+[2018-08-16 12:21:08,504 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/kpi.jtl
+[2018-08-16 12:21:08,504 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/error.jtl
+[2018-08-16 12:21:08,505 DEBUG Engine.jmeter.LoadSettingsProcessor] Thread group detection: iterations are found, regular ThreadGroup will be used
+[2018-08-16 12:21:08,507 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (blazedemo) to ThreadGroup and apply load parameters
+[2018-08-16 12:21:08,508 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+[2018-08-16 12:21:08,508 DEBUG JMX] Saving JMX to: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+[2018-08-16 12:21:08,508 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {'jmeter.save.saveservice.autoflush': u'true', 'jmeter.save.saveservice.connect_time': u'true', 'user.classpath': '/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481:/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': u'', 'jmeterengine.force.system.exit': u'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2018-08-16 12:21:08,509 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter-bzt.properties
+[2018-08-16 12:21:08,509 DEBUG Engine.jmeter.JMeter] Passing JVM_ARGS: ''
+[2018-08-16 12:21:08,509 DEBUG bzt.utils] Executing shell: ['/Users/narsi01/.bzt/jmeter-taurus/4.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx'] at .
+[2018-08-16 12:21:12,873 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+2018-08-16 12:21:09,286 INFO o.j.r.PluginManagerCMD: Command is: install-for-jmx
+2018-08-16 12:21:09,395 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-5ca3c8056e63a2f603a7710d2d4b11f3-nongui
+2018-08-16 12:21:11,723 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.1, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, jpgc-prmctl=0.4, jpgc-perfmon=2.1, jpgc-plugins-manager=1.1, jpgc-tst=2.5, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+2018-08-16 12:21:11,725 INFO o.j.r.PluginManagerCMD: Params line is: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+2018-08-16 12:21:12,015 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-08-16 12:21:12,047 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2018-08-16 12:21:12,051 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+2018-08-16 12:21:12,309 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2018-08-16 12:21:12,311 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-08-16 12:21:12,413 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-08-16 12:21:12,413 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-08-16 12:21:12,414 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-08-16 12:21:12,414 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2018-08-16 12:21:12,414 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2018-08-16 12:21:12,414 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2018-08-16 12:21:12,488 INFO o.j.r.PluginManager: Finishing without changes
+
+
+[2018-08-16 12:21:12,874 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter.out
+[2018-08-16 12:21:12,874 DEBUG Engine] New artifact filename: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter.err
+[2018-08-16 12:21:12,875 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': u'bzt.modules.reporting.FinalStatus'})
+[2018-08-16 12:21:12,875 DEBUG root] Importing module: bzt.modules.reporting
+[2018-08-16 12:21:13,366 DEBUG easyprocess] version=0.2.3
+[2018-08-16 12:21:13,493 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-08-16 12:21:13,521 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-08-16 12:21:13,521 DEBUG Engine] Module config: console defaultdict(None, {'class': u'bzt.modules.console.ConsoleStatusReporter'})
+[2018-08-16 12:21:13,521 DEBUG root] Importing module: bzt.modules.console
+[2018-08-16 12:21:13,521 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-08-16 12:21:13,521 DEBUG Engine] Module config: passfail defaultdict(None, {'class': u'bzt.modules.passfail.PassFailStatus'})
+[2018-08-16 12:21:13,521 DEBUG root] Importing module: bzt.modules.passfail
+[2018-08-16 12:21:13,522 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-08-16 12:21:13,522 DEBUG Engine] Module config: final_stats defaultdict(None, {'class': u'bzt.modules.reporting.FinalStatus'})
+[2018-08-16 12:21:13,522 DEBUG root] Importing module: bzt.modules.reporting
+[2018-08-16 12:21:13,522 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-08-16 12:21:13,522 DEBUG Engine] Module config: junit-xml defaultdict(None, {'class': u'bzt.modules.reporting.JUnitXMLReporter'})
+[2018-08-16 12:21:13,522 DEBUG root] Importing module: bzt.modules.reporting
+[2018-08-16 12:21:13,522 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-08-16 12:21:13,528 DEBUG root] Importing module: bzt.modules.passfail
+[2018-08-16 12:21:13,528 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-08-16 12:21:13,530 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.yml
+[2018-08-16 12:21:13,559 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.json
+[2018-08-16 12:21:13,560 INFO Engine] Starting...
+[2018-08-16 12:21:13,560 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x106b12b10>
+[2018-08-16 12:21:13,560 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10537ca90>
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x1065c1e50>
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x106ccea90>
+[2018-08-16 12:21:13,561 INFO Engine.console] Waiting for results...
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x106d00750>
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x106d33a50>
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x106d33ad0>
+[2018-08-16 12:21:13,561 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x105350e90>
+[2018-08-16 12:21:13,561 DEBUG Engine.local] Delay setup for None/blazedemo: 0(start-at) + 0(delay) = 0
+[2018-08-16 12:21:13,563 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.yml
+[2018-08-16 12:21:13,592 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.json
+[2018-08-16 12:21:13,593 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-08-16 12:21:13,594 DEBUG root] Leveled up log file verbosity
+[2018-08-16 12:21:13,594 DEBUG bzt.utils] Executing shell: ['/Users/narsi01/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-n', '-t', '/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx', '-j', '/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter.log', '-q', '/Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/jmeter-bzt.properties'] at /Users/narsi01/Desktop/JWC_SN/WKS/WKS
+[2018-08-16 12:21:13,602 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2018-08-16 12:21:13,831 INFO Engine.console] Waiting for finish...
+[2018-08-16 12:21:20,619 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 4s
+[2018-08-16 12:21:27,642 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 5s
+[2018-08-16 12:21:28,736 WARNING root] Alert: avg-rt>350ms for 5 sec
+[2018-08-16 12:21:28,779 INFO root] Pass/Fail criterion triggered shutdown: Failed: avg-rt>350ms for 5 sec
+[2018-08-16 12:21:28,786 WARNING Engine] Please wait for graceful shutdown...
+[2018-08-16 12:21:28,792 DEBUG root] Leveled up log file verbosity
+[2018-08-16 12:21:28,792 INFO Engine] Shutting down...
+[2018-08-16 12:21:28,799 DEBUG Engine] Current stop reason: Failed: avg-rt>350ms for 5 sec
+[2018-08-16 12:21:28,799 DEBUG Engine.local] Shutdown None/blazedemo
+[2018-08-16 12:21:29,804 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2018-08-16 12:21:33,824 DEBUG Engine.jmeter] JMeter stopped on Shutdown command
+[2018-08-16 12:21:33,824 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x105350550>]/{<logging.StreamHandler object at 0x105350550>: <open file '<stdout>', mode 'w' at 0x103adc150>}
+[2018-08-16 12:21:33,827 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.yml
+[2018-08-16 12:21:33,856 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.json
+[2018-08-16 12:21:33,858 WARNING root] Automated shutdown
+[2018-08-16 12:21:33,858 DEBUG root] AutomatedShutdown: Failed: avg-rt>350ms for 5 sec
+Traceback (most recent call last):
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/cli.py", line 254, in perform
+    self.engine.run()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 224, in run
+    reraise(exc_info)
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 206, in run
+    self._wait()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 245, in _wait
+    while not self._check_modules_list():
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/engine.py", line 232, in _check_modules_list
+    finished = bool(module.check())
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.py", line 98, in check
+    res = res or crit.check()
+  File "/usr/local/Cellar/bzt/1.12.1/libexec/lib/python2.7/site-packages/bzt/modules/passfail.py", line 204, in check
+    raise AutomatedShutdown("%s" % self)
+AutomatedShutdown: Failed: avg-rt>350ms for 5 sec
+[2018-08-16 12:21:33,858 INFO Engine] Post-processing...
+[2018-08-16 12:21:33,858 DEBUG Engine.local] Post-process None/blazedemo
+[2018-08-16 12:21:33,858 DEBUG Engine] Add existing artifact (move=True): /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+[2018-08-16 12:21:33,858 DEBUG Engine] No need to copy /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/modified_requests.jmx
+[2018-08-16 12:21:33,859 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Opening file: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/error.jtl
+[2018-08-16 12:21:33,859 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/error.jtl
+[2018-08-16 12:21:33,860 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/error.jtl
+[2018-08-16 12:21:33,860 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/kpi.jtl
+[2018-08-16 12:21:33,861 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read: 42 lines / 5033 bytes (at speed 1048576)
+[2018-08-16 12:21:33,862 DEBUG Engine.jmeter.JTLReader] Buffer len: 8; Known errors count: 0
+[2018-08-16 12:21:33,862 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 7s
+[2018-08-16 12:21:33,862 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447282
+[2018-08-16 12:21:33,906 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447283
+[2018-08-16 12:21:33,957 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447284
+[2018-08-16 12:21:34,018 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447285
+[2018-08-16 12:21:34,075 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447286
+[2018-08-16 12:21:34,117 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447287
+[2018-08-16 12:21:34,166 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447288
+[2018-08-16 12:21:34,213 DEBUG Engine.jmeter.JTLReader] Aggregating: 1534447289
+[2018-08-16 12:21:34,262 DEBUG Engine.consolidator] Consolidator buffer[10]: [1534447280, 1534447281, 1534447282, 1534447283, 1534447284, 1534447285, 1534447286, 1534447287, 1534447288, 1534447289]
+[2018-08-16 12:21:34,262 DEBUG Engine.consolidator] Merging into 1534447280
+[2018-08-16 12:21:34,263 DEBUG Engine.consolidator] Merging 1534447280
+[2018-08-16 12:21:34,335 DEBUG root] 1534447280 Failed: avg-rt>350ms for 6 sec: True
+[2018-08-16 12:21:34,335 DEBUG Engine.consolidator] Processed datapoint: 1534447280/None
+[2018-08-16 12:21:34,335 DEBUG Engine.consolidator] Merging into 1534447281
+[2018-08-16 12:21:34,335 DEBUG Engine.consolidator] Merging 1534447281
+[2018-08-16 12:21:34,429 DEBUG root] 1534447281 Failed: avg-rt>350ms for 7 sec: True
+[2018-08-16 12:21:34,429 DEBUG Engine.consolidator] Processed datapoint: 1534447281/None
+[2018-08-16 12:21:34,429 DEBUG Engine.consolidator] Merging into 1534447282
+[2018-08-16 12:21:34,429 DEBUG Engine.consolidator] Merging 1534447282
+[2018-08-16 12:21:34,543 DEBUG root] 1534447282 Failed: avg-rt>350ms for 8 sec: True
+[2018-08-16 12:21:34,543 DEBUG Engine.consolidator] Processed datapoint: 1534447282/None
+[2018-08-16 12:21:34,543 DEBUG Engine.consolidator] Merging into 1534447283
+[2018-08-16 12:21:34,543 DEBUG Engine.consolidator] Merging 1534447283
+[2018-08-16 12:21:34,646 DEBUG root] 1534447283 Failed: avg-rt>350ms for 9 sec: True
+[2018-08-16 12:21:34,647 DEBUG Engine.consolidator] Processed datapoint: 1534447283/None
+[2018-08-16 12:21:34,647 DEBUG Engine.consolidator] Merging into 1534447284
+[2018-08-16 12:21:34,647 DEBUG Engine.consolidator] Merging 1534447284
+[2018-08-16 12:21:34,761 DEBUG root] 1534447284 Failed: avg-rt>350ms for 10 sec: True
+[2018-08-16 12:21:34,761 DEBUG Engine.consolidator] Processed datapoint: 1534447284/None
+[2018-08-16 12:21:34,761 DEBUG Engine.consolidator] Merging into 1534447285
+[2018-08-16 12:21:34,762 DEBUG Engine.consolidator] Merging 1534447285
+[2018-08-16 12:21:34,865 DEBUG root] 1534447285 Failed: avg-rt>350ms for 11 sec: True
+[2018-08-16 12:21:34,865 DEBUG Engine.consolidator] Processed datapoint: 1534447285/None
+[2018-08-16 12:21:34,865 DEBUG Engine.consolidator] Merging into 1534447286
+[2018-08-16 12:21:34,865 DEBUG Engine.consolidator] Merging 1534447286
+[2018-08-16 12:21:34,955 DEBUG root] 1534447286 Failed: avg-rt>350ms for 12 sec: True
+[2018-08-16 12:21:34,956 DEBUG Engine.consolidator] Processed datapoint: 1534447286/None
+[2018-08-16 12:21:34,956 DEBUG Engine.consolidator] Merging into 1534447287
+[2018-08-16 12:21:34,956 DEBUG Engine.consolidator] Merging 1534447287
+[2018-08-16 12:21:35,056 DEBUG root] 1534447287 Failed: avg-rt>350ms for 13 sec: True
+[2018-08-16 12:21:35,056 DEBUG Engine.consolidator] Processed datapoint: 1534447287/None
+[2018-08-16 12:21:35,056 DEBUG Engine.consolidator] Merging into 1534447288
+[2018-08-16 12:21:35,056 DEBUG Engine.consolidator] Merging 1534447288
+[2018-08-16 12:21:35,155 DEBUG root] 1534447288 Failed: avg-rt>350ms for 14 sec: True
+[2018-08-16 12:21:35,156 DEBUG Engine.consolidator] Processed datapoint: 1534447288/None
+[2018-08-16 12:21:35,156 DEBUG Engine.consolidator] Merging into 1534447289
+[2018-08-16 12:21:35,156 DEBUG Engine.consolidator] Merging 1534447289
+[2018-08-16 12:21:35,256 DEBUG root] 1534447289 Failed: avg-rt>350ms for 15 sec: True
+[2018-08-16 12:21:35,256 DEBUG Engine.consolidator] Processed datapoint: 1534447289/None
+[2018-08-16 12:21:35,257 INFO Engine.final-stats] Test duration: 0:00:20
+[2018-08-16 12:21:35,257 INFO Engine.final-stats] Samples count: 126, 0.00% failures
+[2018-08-16 12:21:35,257 INFO Engine.final-stats] Average times: total 2.631, latency 0.579, connect 0.161
+[2018-08-16 12:21:35,257 INFO Engine.final-stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.444 (0x(B
+(0x(B          50.0 (0x(B         2.369 (0x(B
+(0x(B          90.0 (0x(B         4.619 (0x(B
+(0x(B          95.0 (0x(B         6.167 (0x(B
+(0x(B          99.0 (0x(B         7.283 (0x(B
+(0x(B          99.9 (0x(B         8.071 (0x(B
+(0x(B         100.0 (0x(B         8.071 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2018-08-16 12:21:35,289 INFO Engine.final-stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                                           (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B http://www.blazedemo.com/home/                  (0x(B   OK   (0x(B 100.00% (0x(B  2.138 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/home/help.html         (0x(B   OK   (0x(B 100.00% (0x(B  1.853 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/home/help/contact.html (0x(B   OK   (0x(B 100.00% (0x(B  1.999 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/index_a.html           (0x(B   OK   (0x(B 100.00% (0x(B  3.581 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2018-08-16 12:21:35,289 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-08-16 12:21:35,289 INFO Engine.final_stats] Test duration: 0:00:20
+[2018-08-16 12:21:35,289 INFO Engine.final_stats] Samples count: 126, 0.00% failures
+[2018-08-16 12:21:35,289 INFO Engine.final_stats] Average times: total 2.631, latency 0.579, connect 0.161
+[2018-08-16 12:21:35,290 INFO Engine.final_stats] Percentiles:
+(0lqqqqqqqqqqqqqqqwqqqqqqqqqqqqqqqk(B
+(0x(B Percentile, % (0x(B Resp. Time, s (0x(B
+(0tqqqqqqqqqqqqqqqnqqqqqqqqqqqqqqqu(B
+(0x(B           0.0 (0x(B         0.444 (0x(B
+(0x(B          50.0 (0x(B         2.369 (0x(B
+(0x(B          90.0 (0x(B         4.619 (0x(B
+(0x(B          95.0 (0x(B         6.167 (0x(B
+(0x(B          99.0 (0x(B         7.283 (0x(B
+(0x(B          99.9 (0x(B         8.071 (0x(B
+(0x(B         100.0 (0x(B         8.071 (0x(B
+(0mqqqqqqqqqqqqqqqvqqqqqqqqqqqqqqqj(B
+[2018-08-16 12:21:35,291 INFO Engine.final_stats] Request label stats:
+(0lqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqwqqqqqqqqwqqqqqqqqqwqqqqqqqqwqqqqqqqk(B
+(0x(B label                                           (0x(B status (0x(B    succ (0x(B avg_rt (0x(B error (0x(B
+(0tqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqnqqqqqqqqnqqqqqqqqqnqqqqqqqqnqqqqqqqu(B
+(0x(B http://www.blazedemo.com/home/                  (0x(B   OK   (0x(B 100.00% (0x(B  2.138 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/home/help.html         (0x(B   OK   (0x(B 100.00% (0x(B  1.853 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/home/help/contact.html (0x(B   OK   (0x(B 100.00% (0x(B  1.999 (0x(B       (0x(B
+(0x(B http://www.blazedemo.com/index_a.html           (0x(B   OK   (0x(B 100.00% (0x(B  3.581 (0x(B       (0x(B
+(0mqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqvqqqqqqqqvqqqqqqqqqvqqqqqqqqvqqqqqqqj(B
+[2018-08-16 12:21:35,291 INFO Engine.final_stats] Dumping final status as CSV: aggregate.csv
+[2018-08-16 12:21:35,306 DEBUG Engine.junit-xml] Processing passfail objects: [<bzt.modules.passfail.PassFailStatus object at 0x106d00750>]
+[2018-08-16 12:21:35,306 WARNING Engine.XUnitFileWriter] File pass-fail.xml already exists, it will be overwritten
+[2018-08-16 12:21:35,306 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: pass-fail.xml
+[2018-08-16 12:21:35,345 DEBUG Engine.Configuration] Dumping YAML config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.yml
+[2018-08-16 12:21:35,393 DEBUG Engine.Configuration] Dumping JSON config into /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/effective.json
+[2018-08-16 12:21:35,395 INFO root] Artifacts dir: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481
+[2018-08-16 12:21:35,395 WARNING root] Done performing with code: 3
+[2018-08-16 12:21:35,396 DEBUG root] Closing log handler: /Users/narsi01/Desktop/JWC_SN/WKS/WKS/2018-08-16_12-21-01.451481/bzt.log
